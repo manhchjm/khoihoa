@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trường THPT Chuyên Khoa học Xã hội và Nhân văn - Đại học Quốc gia Hà Nội">
-    <title>Trường THPT Chuyên KHXH&NV - ĐHQGHN</title>
+    <meta name="description" content="Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ">
+    <title>Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,11 @@
                     <span class="nav-divider">|</span>
                     <a href="#" class="top-nav-link">Phòng GD&ĐT</a>
                     <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link theme-link" data-theme="thpt">THPT</a>
+                    <a href="#" class="top-nav-link theme-link menu-switcher" data-theme="thpt" data-menu="thpt">THPT</a>
                     <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link theme-link" data-theme="thcs">THCS</a>
+                    <a href="#" class="top-nav-link theme-link menu-switcher" data-theme="thcs" data-menu="thcs">THCS</a>
                     <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link theme-link" data-theme="tieu-hoc">Tiểu học</a>
+                    <a href="#" class="top-nav-link theme-link menu-switcher" data-theme="tieu-hoc" data-menu="tieu-hoc">Tiểu học</a>
                 </div>
                 <div class="top-nav-right">
                     <div class="auth-links">
@@ -53,9 +53,7 @@
                 <div class="logo">
                     <div class="logo-icon">1S1</div>
                     <div class="logo-text">
-                        <div class="logo-text-main">TRƯỜNG ĐẠI HỌC KHOA HỌC XÃ HỘI VÀ NHÂN VĂN - ĐẠI HỌC QUỐC GIA HÀ NỘI</div>
-                        <div class="logo-text-sub">TRƯỜNG THPT CHUYÊN KHOA HỌC XÃ HỘI VÀ NHÂN VĂN</div>
-                        <div class="logo-text-en">High School for Gifted Students in Social Sciences and Humanities</div>
+                        <div class="logo-text-sub">Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</div>
                     </div>
                 </div>
             </div>
@@ -66,14 +64,6 @@
     <nav class="navigation-bar">
         <div class="container">
             <ul class="nav-menu" id="navMenu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9 22 9 12 15 12 15 22"/>
-                        </svg>
-                    </a>
-                </li>
                 <li class="nav-item has-dropdown">
                     <a href="#about" class="nav-link">
                         Giới thiệu
@@ -81,22 +71,39 @@
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#rules" class="dropdown-link">Nội quy-thông điệp</a></li>
+                        <li><a href="#history" class="dropdown-link">Lịch sử nhà trường</a></li>
+                        <li><a href="#facilities" class="dropdown-link">Cơ sở vật chất</a></li>
+                        <li><a href="#organization" class="dropdown-link">Cơ cấu tổ chức</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item has-dropdown">
-                    <a href="#news" class="nav-link">
-                        Tin tức và sự kiện
+                    <a href="#school-life" class="nav-link">
+                        Nhịp sống học đường
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#clubs" class="dropdown-link">Các câu lạc bộ</a></li>
+                        <li><a href="#counseling" class="dropdown-link">Tư vấn học đường</a></li>
+                        <li><a href="#health" class="dropdown-link">Y tế học đường</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item has-dropdown">
-                    <a href="#training" class="nav-link">
-                        Đào tạo
+                    <a href="#schedule" class="nav-link">
+                        Lịch làm việc
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#schedule-thcs" class="dropdown-link">TKB khối trung học cơ sở</a></li>
+                        <li><a href="#schedule-tieu-hoc" class="dropdown-link">TKB khối tiểu học</a></li>
+                        <li><a href="#schedule-week" class="dropdown-link">Lịch công tác tuần</a></li>
+                        <li><a href="#schedule-thpt" class="dropdown-link">TKB khối trung học phổ thông</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item has-dropdown">
                     <a href="#admission" class="nav-link">
@@ -105,22 +112,53 @@
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#admission-tieu-hoc" class="dropdown-link">Tuyển sinh khối tiểu học</a></li>
+                        <li><a href="#admission-thcs" class="dropdown-link">Tuyển sinh khối trung học cơ sở</a></li>
+                        <li><a href="#admission-thpt" class="dropdown-link">Tuyển sinh khối trung học phổ thông</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item has-dropdown">
-                    <a href="#cooperation" class="nav-link">
-                        Hợp tác - Phát triển
+                    <a href="#news" class="nav-link">
+                        Tin tức
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#news-thcs" class="dropdown-link">Khối trung học cơ sở</a></li>
+                        <li><a href="#news-tieu-hoc" class="dropdown-link">Khối tiểu học</a></li>
+                        <li><a href="#news-thpt" class="dropdown-link">Khối trung học phổ thông</a></li>
+                        <li><a href="#news-general" class="dropdown-link">Thông tin chung nhà trường</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item has-dropdown">
-                    <a href="#students" class="nav-link">
-                        Học sinh
+                    <a href="#documents" class="nav-link">
+                        Văn bản
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"/>
                         </svg>
                     </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#documents-school" class="dropdown-link">Văn bản của nhà trường</a></li>
+                        <li><a href="#documents-department" class="dropdown-link">Văn bản của sở giáo dục và đào tạo</a></li>
+                        <li><a href="#documents-ministry" class="dropdown-link">Văn bản của bộ giáo dục và đào tạo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#activities" class="nav-link" id="activities-menu-link">
+                        <span class="activities-menu-text">Hoạt động của tiểu học</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#activities-tieu-hoc" class="dropdown-link">Khối tiểu học</a></li>
+                        <li><a href="#activities-union" class="dropdown-link">Hoạt động công đoàn</a></li>
+                        <li><a href="#activities-youth" class="dropdown-link">Hoạt động đoàn thanh niên</a></li>
+                        <li><a href="#activities-thcs" class="dropdown-link">Khối trung học cơ sở</a></li>
+                        <li><a href="#activities-thpt" class="dropdown-link">Khối trung học phổ thông</a></li>
+                    </ul>
                 </li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -140,6 +178,7 @@
                     <!-- Banner/Slider -->
                     <div class="banner-section">
                         <div class="banner-image">
+                            <img src="https://c123khuongha.edu.vn/wp-content/uploads/2024/07/z5669371047428_5036619a8cdd385816539c3d33f1069e.jpg" alt="Banner" class="banner-img">
                             <div class="banner-overlay">
                                 <div class="banner-text-small">Hội thi Văn nghệ chào mừng năm học mới 2025-2026</div>
                             </div>
@@ -183,7 +222,7 @@
                         <div class="news-grid">
                             <article class="news-card">
                                 <div class="news-image">
-                                    <div class="news-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg" alt="Tin tức 1" class="news-img">
                                 </div>
                                 <div class="news-content">
                                     <h3 class="news-title">Tiêu đề tin tức 1</h3>
@@ -193,7 +232,7 @@
                             </article>
                             <article class="news-card">
                                 <div class="news-image">
-                                    <div class="news-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/1-4-768x432.jpg" alt="Tin tức 2" class="news-img">
                                 </div>
                                 <div class="news-content">
                                     <h3 class="news-title">Tiêu đề tin tức 2</h3>
@@ -203,7 +242,7 @@
                             </article>
                             <article class="news-card">
                                 <div class="news-image">
-                                    <div class="news-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg" alt="Tin tức 3" class="news-img">
                                 </div>
                                 <div class="news-content">
                                     <h3 class="news-title">Tiêu đề tin tức 3</h3>
@@ -213,7 +252,7 @@
                             </article>
                             <article class="news-card">
                                 <div class="news-image">
-                                    <div class="news-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7330545367475_acd07545f055f9fc3f6b7a19a799a00b-768x520.jpg" alt="Tin tức 4" class="news-img">
                                 </div>
                                 <div class="news-content">
                                     <h3 class="news-title">Tiêu đề tin tức 4</h3>
@@ -230,7 +269,7 @@
                         <div class="training-programs-grid">
                             <article class="training-card">
                                 <div class="training-card-image">
-                                    <div class="training-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg" alt="Hệ chuyên" class="training-img">
                                 </div>
                                 <div class="training-card-content">
                                     <h3 class="training-card-title">Hệ chuyên</h3>
@@ -239,7 +278,7 @@
                             </article>
                             <article class="training-card">
                                 <div class="training-card-image">
-                                    <div class="training-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/1-4-768x432.jpg" alt="Hệ Không chuyên CLC" class="training-img">
                                 </div>
                                 <div class="training-card-content">
                                     <h3 class="training-card-title">Hệ Không chuyên CLC</h3>
@@ -248,7 +287,7 @@
                             </article>
                             <article class="training-card">
                                 <div class="training-card-image">
-                                    <div class="training-image-placeholder"></div>
+                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg" alt="Ngoại ngữ hai" class="training-img">
                                 </div>
                                 <div class="training-card-content">
                                     <h3 class="training-card-title">Ngoại ngữ hai</h3>
@@ -263,13 +302,13 @@
                 <aside class="right-sidebar">
                     <article class="sidebar-card">
                         <div class="sidebar-card-image">
-                            <div class="sidebar-image-placeholder"></div>
+                            <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7330545367475_acd07545f055f9fc3f6b7a19a799a00b-768x520.jpg" alt="Lễ kết nạp Đảng viên" class="sidebar-img">
                         </div>
-                        <h3 class="sidebar-card-title">Lễ kết nạp Đảng viên mới của Trường THPT Chuyên KHXH&NV</h3>
+                        <h3 class="sidebar-card-title">Lễ kết nạp Đảng viên mới của Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</h3>
                     </article>
                     <article class="sidebar-card">
                         <div class="sidebar-card-image">
-                            <div class="sidebar-image-placeholder"></div>
+                            <img src="https://c123khuongha.edu.vn/wp-content/uploads/2024/07/z5669371047428_5036619a8cdd385816539c3d33f1069e.jpg" alt="Lễ Tri ân" class="sidebar-img">
                         </div>
                         <h3 class="sidebar-card-title">Lễ Tri ân và Trưởng thành Dành Cho Học Sinh Khoá 3: Chạm 18 - The Glanz.</h3>
                     </article>
@@ -299,14 +338,14 @@
                     <h3 class="student-block-title">Hoạt Động Đoàn</h3>
                     <p class="student-block-description">Cập nhật những thông tin Hoạt động đoàn dành cho học sinh</p>
                     <div class="student-block-image">
-                        <div class="student-image-placeholder"></div>
+                        <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg" alt="Hoạt động Đoàn" class="student-img">
                     </div>
                 </div>
                 <div class="student-block">
                     <h3 class="student-block-title">Sáng tác của học sinh</h3>
                     <p class="student-block-description">Sáng tác của học sinh</p>
                     <div class="student-block-image">
-                        <div class="student-image-placeholder"></div>
+                        <img src="https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg" alt="Sáng tác của học sinh" class="student-img">
                     </div>
                 </div>
             </div>
@@ -404,7 +443,7 @@
                     <div class="footer-logo-icon">1S1</div>
                 </div>
                 <div class="footer-contact-info">
-                    <h3 class="footer-contact-title">TRƯỜNG THPT CHUYÊN KHOA HỌC XÃ HỘI VÀ NHÂN VĂN</h3>
+                    <h3 class="footer-contact-title">Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</h3>
                     <div class="footer-contact-details">
                         <p>Địa chỉ: Nhà A, 336 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
                         <p>Điện thoại: 024-356-354-96</p>
@@ -442,7 +481,7 @@
                     <a href="#">Liên hệ</a>
                 </div>
                 <div class="footer-bottom-right">
-                    <p>Bản quyền ©2021 Trường THPT Chuyên Khoa học Xã hội và Nhân văn Xây dựng trên mã nguồn NukeViet hỗ trợ bởi VINADES.,JSC</p>
+                    <p>Bản quyền ©2021 Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ Xây dựng trên mã nguồn NukeViet hỗ trợ bởi VINADES.,JSC</p>
                 </div>
             </div>
         </div>
