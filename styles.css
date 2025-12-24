@@ -385,6 +385,46 @@ button {
     transform: rotate(180deg);
 }
 
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    min-width: 220px;
+    box-shadow: var(--shadow-lg);
+    border-radius: 6px;
+    padding: 8px 0;
+    margin-top: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    list-style: none;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-primary);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.dropdown-link:hover {
+    background-color: var(--bg-secondary);
+    color: var(--primary-color);
+    padding-left: 24px;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -451,6 +491,16 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .banner-overlay {
@@ -644,6 +694,12 @@ button {
     background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
 }
 
+.training-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .training-card-content {
     padding: 18px;
     flex: 1;
@@ -754,6 +810,12 @@ button {
     background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
 }
 
+.news-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .news-content {
     padding: 16px;
     flex: 1;
@@ -831,6 +893,12 @@ button {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+}
+
+.sidebar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sidebar-card-title {
@@ -1005,6 +1073,37 @@ button {
         width: 100%;
         padding: var(--spacing-sm);
         justify-content: space-between;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-radius: 0;
+    }
+    
+    .has-dropdown.active .dropdown-menu {
+        max-height: 500px;
+        padding: 8px 0;
+    }
+    
+    .dropdown-link {
+        color: var(--white);
+        padding: 10px 20px 10px 40px;
+    }
+    
+    .dropdown-link:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        padding-left: 44px;
+        color: var(--white);
     }
     
     .nav-toggle {
@@ -1266,6 +1365,12 @@ button {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+}
+
+.student-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ============================================
