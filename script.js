@@ -57,7 +57,13 @@ navItems.forEach(item => {
     if (window.innerWidth <= 767) {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            item.classList.toggle('dropdown-open');
+            // Close other dropdowns
+            navItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            item.classList.toggle('active');
         });
     }
 });
@@ -354,17 +360,51 @@ function applyTheme(theme) {
     localStorage.setItem('selectedTheme', theme);
 }
 
+// Menu switcher for different school levels
+const menuTexts = {
+    'tieu-hoc': 'Hoạt động của tiểu học',
+    'thcs': 'Hoạt động của THCS',
+    'thpt': 'Hoạt động của THPT'
+};
+
+// Ensure menu text is updated when theme changes
+function updateMenuText(menuType) {
+    const activitiesMenuText = document.querySelector('.activities-menu-text');
+    if (activitiesMenuText) {
+        activitiesMenuText.textContent = menuTexts[menuType] || menuTexts['tieu-hoc'];
+    }
+}
+
 // Initialize theme from localStorage or default
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+    const savedMenu = localStorage.getItem('selectedMenu') || 'tieu-hoc';
     applyTheme(savedTheme);
+    updateMenuText(savedMenu);
     
-    // Add click handlers
+    // Add click handlers for theme and menu switcher
     document.querySelectorAll('.theme-link').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const theme = this.getAttribute('data-theme');
+            const menu = this.getAttribute('data-menu');
             applyTheme(theme);
+            if (menu) {
+                updateMenuText(menu);
+                localStorage.setItem('selectedMenu', menu);
+            }
+        });
+    });
+    
+    // Add click handlers for menu switcher only
+    document.querySelectorAll('.menu-switcher').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const menu = this.getAttribute('data-menu');
+            if (menu) {
+                updateMenuText(menu);
+                localStorage.setItem('selectedMenu', menu);
+            }
         });
     });
 });
@@ -378,3 +418,103 @@ themeStyle.textContent = `
     }
 `;
 document.head.appendChild(themeStyle);
+
+// ============================================
+// Random Image Assignment
+// ============================================
+
+// Array of image URLs
+const imageUrls = [
+    'https://c123khuongha.edu.vn/wp-content/uploads/2024/07/z5669371047428_5036619a8cdd385816539c3d33f1069e.jpg',
+    'https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg',
+    'https://c123khuongha.edu.vn/wp-content/uploads/2025/12/1-4-768x432.jpg',
+    'https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg',
+    'https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7330545367475_acd07545f055f9fc3f6b7a19a799a00b-768x520.jpg'
+];
+
+// Function to shuffle array (Fisher-Yates algorithm)
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// Function to get random image URL
+function getRandomImage() {
+    return imageUrls[Math.floor(Math.random() * imageUrls.length)];
+}
+
+// Function to assign random images to elements
+function assignRandomImages() {
+    // Get all image elements
+    const newsImages = document.querySelectorAll('.news-img');
+    const trainingImages = document.querySelectorAll('.training-img');
+    const sidebarImages = document.querySelectorAll('.sidebar-img');
+    const studentImages = document.querySelectorAll('.student-img');
+    const bannerImage = document.querySelector('.banner-img');
+    
+    // Shuffle the array for variety
+    const shuffledImages = shuffleArray(imageUrls);
+    let imageIndex = 0;
+    
+    // Assign to news images
+    newsImages.forEach(img => {
+        if (imageIndex >= shuffledImages.length) {
+            imageIndex = 0;
+            const newShuffle = shuffleArray(imageUrls);
+            shuffledImages.splice(0, shuffledImages.length, ...newShuffle);
+        }
+        img.src = shuffledImages[imageIndex];
+        imageIndex++;
+    });
+    
+    // Assign to training images
+    trainingImages.forEach(img => {
+        if (imageIndex >= shuffledImages.length) {
+            imageIndex = 0;
+            const newShuffle = shuffleArray(imageUrls);
+            shuffledImages.splice(0, shuffledImages.length, ...newShuffle);
+        }
+        img.src = shuffledImages[imageIndex];
+        imageIndex++;
+    });
+    
+    // Assign to sidebar images
+    sidebarImages.forEach(img => {
+        if (imageIndex >= shuffledImages.length) {
+            imageIndex = 0;
+            const newShuffle = shuffleArray(imageUrls);
+            shuffledImages.splice(0, shuffledImages.length, ...newShuffle);
+        }
+        img.src = shuffledImages[imageIndex];
+        imageIndex++;
+    });
+    
+    // Assign to student images
+    studentImages.forEach(img => {
+        if (imageIndex >= shuffledImages.length) {
+            imageIndex = 0;
+            const newShuffle = shuffleArray(imageUrls);
+            shuffledImages.splice(0, shuffledImages.length, ...newShuffle);
+        }
+        img.src = shuffledImages[imageIndex];
+        imageIndex++;
+    });
+    
+    // Assign to banner (optional - can keep original or randomize)
+    if (bannerImage) {
+        // Keep banner image as is, or uncomment below to randomize
+        // bannerImage.src = getRandomImage();
+    }
+}
+
+// Initialize random images when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    // Small delay to ensure all images are loaded
+    setTimeout(() => {
+        assignRandomImages();
+    }, 100);
+});
