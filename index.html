@@ -3,492 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ">
-    <title>Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Hệ thống giáo dục Nguyễn Bỉnh Khiêm - Cầu Giấy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font NBK Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Navigation Bar -->
-    <div class="top-nav-bar">
-        <div class="container">
-            <div class="top-nav-content">
-                <div class="top-nav-links">
-                    <a href="#" class="top-nav-link">Cơ quan sở GD&ĐT</a>
-                    <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link">Phòng GD&ĐT</a>
-                    <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link theme-link menu-switcher" data-theme="thpt" data-menu="thpt">THPT</a>
-                    <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link theme-link menu-switcher" data-theme="thcs" data-menu="thcs">THCS</a>
-                    <span class="nav-divider">|</span>
-                    <a href="#" class="top-nav-link theme-link menu-switcher" data-theme="tieu-hoc" data-menu="tieu-hoc">Tiểu học</a>
+    <!-- Main Header -->
+    <header>
+        <div class="main-header">
+            <div class="container header-content">
+                <div class="logo-area">
+                    <a href="#">
+                        <img src="Logo.jpg" alt="NBK Logo" class="logo-img">
+                    </a>
                 </div>
-                <div class="top-nav-right">
-                    <div class="auth-links">
-                        <a href="#" class="auth-link">Đăng nhập</a>
-                        <span>/</span>
-                        <a href="#" class="auth-link">Đăng ký</a>
-                    </div>
-                    <div class="top-search-container">
-                        <input type="text" class="top-search-input" placeholder="Tìm kiếm...">
-                        <button class="top-search-btn" aria-label="Tìm kiếm">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"/>
-                                <path d="m21 21-4.35-4.35"/>
-                            </svg>
-                        </button>
+                <div class="school-info">
+                    <p class="info-top">Hệ thống trường chất lượng cao</p>
+                    <h1 class="school-name">KHƯƠNG HẠ - THANH XUÂN</h1>
+                    <div class="info-bottom">
+                        <p><i class="fas fa-university"></i> Trường Tiểu Học - THCS & THPT Khương Hạ - Thanh Xuân</p>
+                        <p><i class="fas fa-box"></i> Trường THCS Khương Hạ - Rubik</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="header-right">
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo-section">
-                <div class="logo">
-                    <div class="logo-icon">1S1</div>
-                    <div class="logo-text">
-                        <div class="logo-text-sub">Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                        <button><i class="fas fa-search"></i></button>
                     </div>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </div>
         </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">TRANG CHỦ</a></li>
+                    <li>
+                        <a href="#">GIỚI THIỆU <i class="fas fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Về nhà trường</a></li>
+                            <li><a href="#">Đội ngũ giáo viên</a></li>
+                            <li><a href="#">Cơ sở vật chất</a></li>
+                            <li><a href="#">Thành tích đạt được</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">TUYỂN SINH <i class="fas fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Quy chế tuyển sinh</a></li>
+                            <li><a href="#">Đăng ký trực tuyến</a></li>
+                            <li><a href="#">Hỏi đáp tuyển sinh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BÁO CHÍ</a></li>
+                    <li>
+                        <a href="#">TIN TỨC & SỰ KIỆN <i class="fas fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Tin tức chung</a></li>
+                            <li><a href="#">Sự kiện sắp tới</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">NBK'S FACE</a></li>
+                    <li><a href="#">TUYỂN DỤNG</a></li>
+                    <li><a href="#">NBK TÂY HỒ</a></li>
+                    <li><a href="#">NBK RUBIK</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navigation-bar">
-        <div class="container">
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item has-dropdown">
-                    <a href="#about" class="nav-link">
-                        Giới thiệu
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#rules" class="dropdown-link">Nội quy-thông điệp</a></li>
-                        <li><a href="#history" class="dropdown-link">Lịch sử nhà trường</a></li>
-                        <li><a href="#facilities" class="dropdown-link">Cơ sở vật chất</a></li>
-                        <li><a href="#organization" class="dropdown-link">Cơ cấu tổ chức</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="#school-life" class="nav-link">
-                        Nhịp sống học đường
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#clubs" class="dropdown-link">Các câu lạc bộ</a></li>
-                        <li><a href="#counseling" class="dropdown-link">Tư vấn học đường</a></li>
-                        <li><a href="#health" class="dropdown-link">Y tế học đường</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="#schedule" class="nav-link">
-                        Lịch làm việc
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#schedule-thcs" class="dropdown-link">TKB khối trung học cơ sở</a></li>
-                        <li><a href="#schedule-tieu-hoc" class="dropdown-link">TKB khối tiểu học</a></li>
-                        <li><a href="#schedule-week" class="dropdown-link">Lịch công tác tuần</a></li>
-                        <li><a href="#schedule-thpt" class="dropdown-link">TKB khối trung học phổ thông</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="#admission" class="nav-link">
-                        Tuyển sinh
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#admission-tieu-hoc" class="dropdown-link">Tuyển sinh khối tiểu học</a></li>
-                        <li><a href="#admission-thcs" class="dropdown-link">Tuyển sinh khối trung học cơ sở</a></li>
-                        <li><a href="#admission-thpt" class="dropdown-link">Tuyển sinh khối trung học phổ thông</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="#news" class="nav-link">
-                        Tin tức
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#news-thcs" class="dropdown-link">Khối trung học cơ sở</a></li>
-                        <li><a href="#news-tieu-hoc" class="dropdown-link">Khối tiểu học</a></li>
-                        <li><a href="#news-thpt" class="dropdown-link">Khối trung học phổ thông</a></li>
-                        <li><a href="#news-general" class="dropdown-link">Thông tin chung nhà trường</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="#documents" class="nav-link">
-                        Văn bản
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#documents-school" class="dropdown-link">Văn bản của nhà trường</a></li>
-                        <li><a href="#documents-department" class="dropdown-link">Văn bản của sở giáo dục và đào tạo</a></li>
-                        <li><a href="#documents-ministry" class="dropdown-link">Văn bản của bộ giáo dục và đào tạo</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item has-dropdown">
-                    <a href="#activities" class="nav-link" id="activities-menu-link">
-                        <span class="activities-menu-text">Hoạt động của tiểu học</span>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#activities-tieu-hoc" class="dropdown-link">Khối tiểu học</a></li>
-                        <li><a href="#activities-union" class="dropdown-link">Hoạt động công đoàn</a></li>
-                        <li><a href="#activities-youth" class="dropdown-link">Hoạt động đoàn thanh niên</a></li>
-                        <li><a href="#activities-thcs" class="dropdown-link">Khối trung học cơ sở</a></li>
-                        <li><a href="#activities-thpt" class="dropdown-link">Khối trung học phổ thông</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
-    <main class="main-content">
-        <div class="container">
-            <div class="content-layout">
-                <!-- Left Column - Main Section -->
-                <div class="main-section">
-                    <!-- Banner/Slider -->
-                    <div class="banner-section">
-                        <div class="banner-image">
-                            <img src="https://c123khuongha.edu.vn/wp-content/uploads/2024/07/z5669371047428_5036619a8cdd385816539c3d33f1069e.jpg" alt="Banner" class="banner-img">
-                            <div class="banner-overlay">
-                                <div class="banner-text-small">Hội thi Văn nghệ chào mừng năm học mới 2025-2026</div>
-                            </div>
-                            <div class="banner-title">CHÀO MỪNG NĂM HỌC MỚI NĂM HỌC 2025-2026</div>
-                        </div>
-                    </div>
-
-                    <!-- Motto/Slogan Section -->
-                    <div class="motto-section">
-                        <div class="motto-text">Trung thực - Đoàn kết - Trách nhiệm - Sẻ chia</div>
-                        <div class="motto-text">Năng động - Sáng tạo - Nhân ái - Nhân văn</div>
-                    </div>
-
-                    <!-- Search Bar Section -->
-                    <div class="search-section">
-                        <div class="search-container">
-                            <input type="text" class="search-input" placeholder="Nhập từ khóa...">
-                            <button class="search-btn-all">Tất cả</button>
-                            <button class="search-btn-submit">Tìm kiếm</button>
-                        </div>
-                    </div>
-
-                    <!-- Bottom Content with Category Sidebar -->
-                    <div class="bottom-content-layout">
-                        <!-- Category Sidebar (Left) -->
-                        <aside class="category-sidebar">
-                            <h3 class="category-title">Danh mục</h3>
-                            <ul class="category-list">
-                                <li><a href="#" class="category-link">Tin hoạt Động</a></li>
-                                <li><a href="#" class="category-link">Nhân vật - Sự kiện</a></li>
-                                <li><a href="#" class="category-link">Thông báo</a></li>
-                                <li><a href="#" class="category-link">Lịch công tác tuần</a></li>
-                                <li><a href="#" class="category-link">Hoạt Động Đoàn</a></li>
-                                <li><a href="#" class="category-link">Sáng tác của học sinh</a></li>
-                                <li><a href="#" class="category-link">Câu lạc bộ</a></li>
-                                <li><a href="#" class="category-link">Cựu học sinh</a></li>
-                            </ul>
-                        </aside>
-
-                        <!-- News Grid (Right) -->
-                        <div class="news-grid">
-                            <article class="news-card">
-                                <div class="news-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg" alt="Tin tức 1" class="news-img">
-                                </div>
-                                <div class="news-content">
-                                    <h3 class="news-title">Tiêu đề tin tức 1</h3>
-                                    <p class="news-excerpt">Mô tả ngắn về tin tức này sẽ được hiển thị ở đây...</p>
-                                    <div class="news-date">Vào ngày 25/10/2025...</div>
-                                </div>
-                            </article>
-                            <article class="news-card">
-                                <div class="news-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/1-4-768x432.jpg" alt="Tin tức 2" class="news-img">
-                                </div>
-                                <div class="news-content">
-                                    <h3 class="news-title">Tiêu đề tin tức 2</h3>
-                                    <p class="news-excerpt">Mô tả ngắn về tin tức này sẽ được hiển thị ở đây...</p>
-                                    <div class="news-date">Vào ngày 24/10/2025...</div>
-                                </div>
-                            </article>
-                            <article class="news-card">
-                                <div class="news-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg" alt="Tin tức 3" class="news-img">
-                                </div>
-                                <div class="news-content">
-                                    <h3 class="news-title">Tiêu đề tin tức 3</h3>
-                                    <p class="news-excerpt">Mô tả ngắn về tin tức này sẽ được hiển thị ở đây...</p>
-                                    <div class="news-date">Vào ngày 23/10/2025...</div>
-                                </div>
-                            </article>
-                            <article class="news-card">
-                                <div class="news-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7330545367475_acd07545f055f9fc3f6b7a19a799a00b-768x520.jpg" alt="Tin tức 4" class="news-img">
-                                </div>
-                                <div class="news-content">
-                                    <h3 class="news-title">Tiêu đề tin tức 4</h3>
-                                    <p class="news-excerpt">Mô tả ngắn về tin tức này sẽ được hiển thị ở đây...</p>
-                                    <div class="news-date">Vào ngày 22/10/2025...</div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <!-- Training Programs Section -->
-                    <section class="training-programs-section">
-                        <h2 class="training-programs-title">Chương trình Đào tạo</h2>
-                        <div class="training-programs-grid">
-                            <article class="training-card">
-                                <div class="training-card-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg" alt="Hệ chuyên" class="training-img">
-                                </div>
-                                <div class="training-card-content">
-                                    <h3 class="training-card-title">Hệ chuyên</h3>
-                                    <p class="training-card-text">3 khối chuyên hiện đang được Trường đưa vào giảng dạy bao gồm: Ngữ văn, Lịch sử, Địa lý</p>
-                                </div>
-                            </article>
-                            <article class="training-card">
-                                <div class="training-card-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/1-4-768x432.jpg" alt="Hệ Không chuyên CLC" class="training-img">
-                                </div>
-                                <div class="training-card-content">
-                                    <h3 class="training-card-title">Hệ Không chuyên CLC</h3>
-                                    <p class="training-card-text">Giới thiệu về Hệ Không chuyên Chất lượng cao</p>
-                                </div>
-                            </article>
-                            <article class="training-card">
-                                <div class="training-card-image">
-                                    <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg" alt="Ngoại ngữ hai" class="training-img">
-                                </div>
-                                <div class="training-card-content">
-                                    <h3 class="training-card-title">Ngoại ngữ hai</h3>
-                                    <p class="training-card-text">Giới thiệu về chương trình đào tạo Ngoại ngữ hai dành cho học sinh</p>
-                                </div>
-                            </article>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Right Sidebar -->
-                <aside class="right-sidebar">
-                    <article class="sidebar-card">
-                        <div class="sidebar-card-image">
-                            <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7330545367475_acd07545f055f9fc3f6b7a19a799a00b-768x520.jpg" alt="Lễ kết nạp Đảng viên" class="sidebar-img">
-                        </div>
-                        <h3 class="sidebar-card-title">Lễ kết nạp Đảng viên mới của Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</h3>
-                    </article>
-                    <article class="sidebar-card">
-                        <div class="sidebar-card-image">
-                            <img src="https://c123khuongha.edu.vn/wp-content/uploads/2024/07/z5669371047428_5036619a8cdd385816539c3d33f1069e.jpg" alt="Lễ Tri ân" class="sidebar-img">
-                        </div>
-                        <h3 class="sidebar-card-title">Lễ Tri ân và Trưởng thành Dành Cho Học Sinh Khoá 3: Chạm 18 - The Glanz.</h3>
-                    </article>
-                </aside>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>NGÔI TRƯỜNG HẠNH PHÚC</h2>
+                <p>Nơi ươm mầm tài năng và nhân cách cho thế hệ tương lai</p>
+                <a href="#" class="btn">ĐĂNG KÝ TUYỂN SINH</a>
             </div>
+        </section>
+
+        <!-- Education System Section -->
+        <section class="education-system">
+            <div class="container">
+                <div class="section-title">
+                    <h2>HỆ THỐNG GIÁO DỤC NGUYỄN BỈNH KHIÊM - CẦU GIẤY</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="system-grid">
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7236192225000_3e2622ca7e2ebf87b615dc365e30b857.jpg');"></div>
+                        <h3>TIỂU HỌC</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7240264583912_ed1fc0b36f73f16459401508db81a9cd.jpg');"></div>
+                        <h3>THCS</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7240286398863_37ee9bbb104428670574cc895a76a97f.jpg');"></div>
+                        <h3>THPT</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7240286684368_40e139614d90abdf92515e4ddc387b63.jpg');"></div>
+                        <h3>TRUNG TÂM<br>TRẢI NGHIỆM SÁNG TẠO<br>VĨNH YÊN - HOÀI ĐỨC</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7369539714738_6c17b3681251eab7bc8d23272929ebfb.jpg');"></div>
+                        <h3>SCHOOL BUS</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7374371081500_0c8b1a47ebb87d054cdeb98bbc686e0d.jpg');"></div>
+                        <h3>BẾP ĂN</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('z7375610700343_1d71849e8e78750f1f6d404459617524.jpg');"></div>
+                        <h3>CLB NGHỆ THUẬT<br>NGOÀI GIỜ</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                    <a href="#" class="system-card">
+                        <div class="card-bg" style="background-image: url('20.jpg');"></div>
+                        <h3>TÂM LÝ<br>HỌC ĐƯỜNG</h3>
+                        <div class="card-bar"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sketch Decoration -->
+        <div class="sketch-decoration"></div>
+
+        <!-- News Section -->
+        <section class="news">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="news-heading">TIN TỨC & SỰ KIỆN</h2>
+                    <p class="news-subheading">TỔNG HỢP TIN TỨC VÀ SỰ KIỆN MỚI NHẤT TỪ TRƯỜNG.</p>
+                    <div class="line"></div>
+                </div>
+                <div class="news-grid">
+                    <!-- News Item 1 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="z7244480566395_98f137b452bc4b98911c3210bea21f97.jpg" alt="News 1">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#">TÂM HOẠT ĐỘNG TRẢI NGHIỆM (TRIỂN KHAI HƯỚNG NGHIỆP THEO DÒNG NĂM 2023)</a></h3>
+                        </div>
+                    </div>
+                    <!-- News Item 2 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="25.jpg" alt="News 2">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#">HỌC SINH LỚP 1 VÀ NHỮNG TRẢI NGHIỆM ĐẦU TIÊN</a></h3>
+                        </div>
+                    </div>
+                    <!-- News Item 3 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="z7369539714738_6c17b3681251eab7bc8d23272929ebfb.jpg" alt="News 3">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#">LỄ KÝ KẾT HỢP TÁC TRƯỜNG TIỂU HỌC NGUYỄN BỈNH KHIÊM - CẦU GIẤY & CÁC TRƯỜNG MẦM NON</a></h3>
+                        </div>
+                    </div>
+                    <!-- News Item 4 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="z7374371081500_0c8b1a47ebb87d054cdeb98bbc686e0d.jpg" alt="News 4">
+                        </div>
+                        <div class="news-content">
+                            <h3><a href="#">CHƯƠNG TRÌNH BIỂU DIỄN NGHỆ THUẬT ĐẶC SẮC</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Widgets -->
+        <div class="floating-social">
+            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn zalo">Zalo</a>
         </div>
+
+        <div class="consult-widget">
+            <div class="robot-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="AI Tuvan" onerror="this.src='https://cdn-icons-png.flaticon.com/512/4712/4712035.png'">
+                <span class="tooltip">AI Tuyển Sinh</span>
+            </div>
+            <a href="tel:0987266630" class="consult-btn">Tư vấn online 0987.266.630</a>
+            <a href="#" class="zalo-chat-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo"></a>
+        </div>
+
+        <!-- Video Library Section -->
+        <section class="video-library">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="video-heading">THƯ VIỆN VIDEO</h2>
+                    <p class="video-subheading">VIDEO HOẠT ĐỘNG CỦA TRƯỜNG NGUYỄN BỈNH KHIÊM</p>
+                    <div class="line"></div>
+                </div>
+                <div class="video-grid">
+                    <!-- Video Item 1 -->
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>[Mashup] VIỆT NAM TỬ TẾ - Thank you | Nguyen Binh Khiem Version</h3>
+                            <p>Mashup Việt Nam tử tế - Thank you | Nguyen Binh Khiem Version</p>
+                        </div>
+                    </div>
+                    <!-- Video Item 2 -->
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>NHỮNG NHÀ GIÁO TÀI NĂNG...</h3>
+                            <p>Đội ngũ giáo viên NBK - Những nhà tâm lý, giáo dục đầy tài năng</p>
+                        </div>
+                    </div>
+                    <!-- Video Item 3 -->
+                    <div class="video-card">
+                        <div class="video-thumb">
+                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>ĐỘI NGŨ GIÁO VIÊN NBK - ...</h3>
+                            <p>Tâm lý học đường NBK - Đồng hành cùng con bước vào tuổi dậy thì</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="leadership">
+            <div class="sketch-decoration-top"></div>
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="leadership-heading">ĐỘI NGŨ LÃNH ĐẠO</h2>
+                    <p class="leadership-subheading">NHỮNG CON NGƯỜI LÀM NÊN THƯƠNG HIỆU</p>
+                    <div class="line"></div>
+                </div>
+                <div class="leadership-grid">
+                    <div class="leadership-card">
+                        <div class="leader-img">
+                            <img src="1.jpg" alt="Nhà giáo TS. Nguyễn Văn Hòa" onerror="this.src='https://via.placeholder.com/200'">
+                        </div>
+                        <h3 class="leader-name">NHÀ GIÁO TS. NGUYỄN VĂN HÒA</h3>
+                        <p class="leader-role">Chủ tịch HĐQT - Người sáng lập</p>
+                    </div>
+                    <div class="leadership-card">
+                        <div class="leader-img">
+                            <img src="2.jpg" alt="Nhà giáo Nguyễn Thu Hòa" onerror="this.src='https://via.placeholder.com/200'">
+                        </div>
+                        <h3 class="leader-name">NHÀ GIÁO NGUYỄN THU HÒA</h3>
+                        <p class="leader-role">Thành viên HĐQT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consultation Section -->
+        <section class="consultation">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="consult-heading">ĐĂNG KÝ TƯ VẤN</h2>
+                    <p class="consult-desc">Đăng ký Email để nhận tin tức mới nhất từ chúng tôi được gửi đến hộp thư đến của bạn!</p>
+                </div>
+                <form class="consult-form">
+                    <input type="text" placeholder="Họ & tên" required>
+                    <input type="tel" placeholder="Số điện thoại" required>
+                    <input type="email" placeholder="Email *" required>
+                    <button type="submit">ĐĂNG KÝ</button>
+                </form>
+            </div>
+        </section>
+
+
     </main>
 
-    <!-- Students Section -->
-    <section class="students-section">
-        <div class="container">
-            <h2 class="section-main-title">Học sinh</h2>
-            <div class="students-grid">
-                <div class="student-block">
-                    <h3 class="student-block-title">Câu lạc bộ</h3>
-                    <p class="student-block-description">Cập nhật những thông tin câu lạc bộ dành cho học sinh</p>
-                    <div class="clubs-grid">
-                        <div class="club-icon"></div>
-                        <div class="club-icon"></div>
-                        <div class="club-icon"></div>
-                        <div class="club-icon"></div>
-                        <div class="club-icon"></div>
-                        <div class="club-icon"></div>
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h2 class="footer-school-name">HỆ THỐNG GIÁO DỤC CHẤT LƯỢNG CAO NGUYỄN BỈNH KHIÊM - CẦU GIẤY</h2>
+                        <ul class="contact-list">
+                            <li><strong>Địa chỉ:</strong> Số 6 Trần Quốc Hoàn - phường Nghĩa Đô - Hà Nội - Việt Nam.</li>
+                            <li><strong>Văn phòng Tiểu học:</strong> 0243.793.1333 | <strong>Văn phòng THCS:</strong> 0243.791.0263</li>
+                            <li><strong>Văn phòng THPT:</strong> 0243.754.5433 | <strong>Lễ Tân:</strong> 0242.243.1355</li>
+                            <li><strong>Email:</strong> info@nbk.edu.vn | <strong>Website:</strong> www.nbk.edu.vn</li>
+                            <li><strong>Facebook:</strong> fb.com/nbk.edu.vn | <strong>Youtube:</strong> https://www.youtube.com/@nbkschool1993</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="student-block">
-                    <h3 class="student-block-title">Hoạt Động Đoàn</h3>
-                    <p class="student-block-description">Cập nhật những thông tin Hoạt động đoàn dành cho học sinh</p>
-                    <div class="student-block-image">
-                        <img src="https://c123khuongha.edu.vn/wp-content/uploads/2025/12/z7332798943937_b5d72c6761aeb73e40b24b60e3884102-768x576.jpg" alt="Hoạt động Đoàn" class="student-img">
-                    </div>
-                </div>
-                <div class="student-block">
-                    <h3 class="student-block-title">Sáng tác của học sinh</h3>
-                    <p class="student-block-description">Sáng tác của học sinh</p>
-                    <div class="student-block-image">
-                        <img src="https://c123khuongha.edu.vn/wp-content/uploads/2023/08/1-768x427.jpg" alt="Sáng tác của học sinh" class="student-img">
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9246864073355!2d105.79284231533214!3d21.03570298599458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4a44485555%3A0x6a22330666016335!2zVHLGsOG7nW5nIFRIQ1MgJmFtcCBUSFQgTmd1eQ!5e0!3m2!1svi!2s!4v1620800000000!5m2!1svi!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners-section">
-        <div class="container">
-            <h2 class="section-main-title">Đối tác</h2>
-            <div class="partners-grid">
-                <div class="partner-logo">
-                    <div class="partner-logo-placeholder">HOCMAI</div>
-                </div>
-                <div class="partner-logo">
-                    <div class="partner-logo-placeholder">SEJONG CENTER</div>
-                </div>
-                <div class="partner-logo">
-                    <div class="partner-logo-placeholder">GOETHE INSTITUT</div>
-                </div>
-                <div class="partner-logo">
-                    <div class="partner-logo-placeholder">NATIONAL Junior College</div>
-                </div>
-                <div class="partner-logo">
-                    <div class="partner-logo-placeholder">MINISTRY OF FOREIGN AFFAIRS SINGAPORE</div>
-                </div>
-                <div class="partner-logo">
-                    <div class="partner-logo-placeholder">BỆNH VIỆN E</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Navigation Links -->
-                <div class="footer-nav-section">
-                    <h4 class="footer-nav-title">GIỚI THIỆU</h4>
-                    <ul class="footer-nav-links">
-                        <li><a href="#">Lịch sử phát triển</a></li>
-                        <li><a href="#">Sứ mệnh - Mục tiêu giáo dục</a></li>
-                        <li><a href="#">Cơ cấu tổ chức</a></li>
-                        <li><a href="#">Logo và bộ nhận diện thương hiệu</a></li>
-                        <li><a href="#">Bài hát truyền thống</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-section">
-                    <h4 class="footer-nav-title">NGHIÊN CỨU</h4>
-                    <ul class="footer-nav-links">
-                        <li><a href="#">Đào tạo liên kết</a></li>
-                        <li><a href="#">Dự án quốc tế</a></li>
-                        <li><a href="#">Đối tác</a></li>
-                        <li><a href="#">Hội thảo Khu vực & Quốc tế</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-section">
-                    <h4 class="footer-nav-title">ĐÀO TẠO</h4>
-                    <ul class="footer-nav-links">
-                        <li><a href="#">Hệ chuyên</a></li>
-                        <li><a href="#">Hệ Không chuyên CLC</a></li>
-                        <li><a href="#">Ngoại ngữ hai</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-section">
-                    <h4 class="footer-nav-title">HỌC SINH</h4>
-                    <ul class="footer-nav-links">
-                        <li><a href="#">Hoạt động Đoàn</a></li>
-                        <li><a href="#">Sáng tác của học sinh</a></li>
-                        <li><a href="#">Câu lạc bộ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-section">
-                    <h4 class="footer-nav-title">TUYỂN SINH</h4>
-                    <ul class="footer-nav-links">
-                        <li><a href="#">Thông tin tuyển sinh</a></li>
-                        <li><a href="#">Lớp bồi dưỡng kiến thức</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-section">
-                    <h4 class="footer-nav-title">DANH MỤC</h4>
-                    <ul class="footer-nav-links">
-                        <li><a href="#">Tin hoạt động</a></li>
-                        <li><a href="#">Nhân vật - Sự kiện</a></li>
-                        <li><a href="#">Thông báo</a></li>
-                        <li><a href="#">Lịch công tác tuần</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="footer-contact">
-                <div class="footer-contact-logo">
-                    <div class="footer-logo-icon">1S1</div>
-                </div>
-                <div class="footer-contact-info">
-                    <h3 class="footer-contact-title">Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ</h3>
-                    <div class="footer-contact-details">
-                        <p>Địa chỉ: Nhà A, 336 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
-                        <p>Điện thoại: 024-356-354-96</p>
-                        <p>Email: chuyenkhxhnv@ussh.edu.vn</p>
-                        <p>Website: http://hssh.ussh.vnu.edu.vn</p>
-                        <p>Youtube: https://bit.ly/hsshchannel</p>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="bottom-footer-content">
+                    <!-- <div class="copyright">
+                        Copyright © 2018 Bản quyền thuộc về TRƯỜNG THCS&THPT NGUYỄN BỈNH KHIÊM - CẦU GIẤY | Thiết kế và phát triển bởi P.A Việt Nam
+                    </div> -->
+                    <div class="online-stats">
+                        Đang Online: 13 | Tổng lượt online: 71,632,129
                     </div>
-                </div>
-                <div class="footer-social">
-                    <h4 class="footer-social-title">MẠNG XÃ HỘI</h4>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon facebook" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-icon youtube" aria-label="YouTube">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                        </a>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-plus"></i></a>
                     </div>
-                </div>
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="footer-bottom-left">
-                    <a href="#">Trang chủ</a>
-                    <span>|</span>
-                    <a href="#">Sitemap</a>
-                    <span>|</span>
-                    <a href="#">Feeds</a>
-                    <span>|</span>
-                    <a href="#">Liên hệ</a>
-                </div>
-                <div class="footer-bottom-right">
-                    <p>Bản quyền ©2021 Trường Tiểu học, Trung học cơ sở, Trung học phổ thông Khương Hạ Xây dựng trên mã nguồn NukeViet hỗ trợ bởi VINADES.,JSC</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
