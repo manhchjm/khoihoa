@@ -3,342 +3,743 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hệ thống giáo dục Nguyễn Bỉnh Khiêm - Cầu Giấy</title>
+    <title>3DS Mechanical - Vật Tư Phụ 3DS | Nhà Cung Cấp Uy Tín Hàng Đầu</title>
+    <meta name="description" content="Công ty TNHH 3DS Việt Nam - Chuyên cung cấp thanh ren, đai treo, nở đạn, bulong, ốc vít, kẹp xà gồ, thanh Unistrut và các phụ kiện cơ khí chất lượng cao.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Font NBK Style -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Main Header -->
-    <header>
-        <div class="main-header">
-            <div class="container header-content">
-                <div class="logo-area">
-                    <a href="#">
-                        <img src="Logo.jpg" alt="NBK Logo" class="logo-img">
+
+    <!-- FLOATING CONTACT BUTTONS -->
+    <div class="floating-buttons">
+        <a href="tel:0912345678" class="float-btn phone-btn" title="Gọi ngay">
+            <i class="fas fa-phone"></i>
+            <span class="float-label">Gọi ngay</span>
+        </a>
+        <a href="https://zalo.me/0912345678" class="float-btn zalo-btn" title="Chat Zalo" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+            <span class="float-label">Zalo</span>
+        </a>
+        <a href="https://m.me/" class="float-btn fb-btn" title="Facebook Messenger" target="_blank">
+            <i class="fab fa-facebook-messenger"></i>
+            <span class="float-label">Messenger</span>
+        </a>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" title="Lên đầu trang">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-bar-left">
+                    <a href="#" class="top-link">
+                        <i class="fas fa-download"></i> Tải catalogue sản phẩm
+                    </a>
+                    <span class="divider">|</span>
+                    <a href="#" class="top-link">
+                        <i class="fas fa-envelope"></i> 3dsvietnam@gmail.com
                     </a>
                 </div>
-                <div class="school-info">
-                    <p class="info-top">Hệ thống trường chất lượng cao</p>
-                    <h1 class="school-name">KHƯƠNG HẠ - THANH XUÂN</h1>
-                    <div class="info-bottom">
-                        <p><i class="fas fa-university"></i> Trường Tiểu Học - THCS & THPT Khương Hạ - Thanh Xuân</p>
-                        <p><i class="fas fa-box"></i> Trường THCS Khương Hạ - Rubik</p>
-                    </div>
-                </div>
-                <div class="header-right">
-
+                <div class="top-bar-right">
+                    <a href="tel:0912345678" class="hotline-btn">
+                        <i class="fas fa-headset"></i>
+                        <span>Hotline: <strong>0912.345.678</strong></span>
+                    </a>
                     <div class="search-box">
-                        <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
                         <button><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
             </div>
         </div>
-        
-        <!-- Navigation Bar -->
-        <nav class="main-nav">
-            <div class="container">
-                <ul class="nav-links">
-                    <li><a href="#" class="active">TRANG CHỦ</a></li>
-                    <li>
-                        <a href="#">GIỚI THIỆU <i class="fas fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Về nhà trường</a></li>
-                            <li><a href="#">Đội ngũ giáo viên</a></li>
-                            <li><a href="#">Cơ sở vật chất</a></li>
-                            <li><a href="#">Thành tích đạt được</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">TUYỂN SINH <i class="fas fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Quy chế tuyển sinh</a></li>
-                            <li><a href="#">Đăng ký trực tuyến</a></li>
-                            <li><a href="#">Hỏi đáp tuyển sinh</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">BÁO CHÍ</a></li>
-                    <li>
-                        <a href="#">TIN TỨC & SỰ KIỆN <i class="fas fa-chevron-down" style="font-size: 0.7em; margin-left: 5px;"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Tin tức chung</a></li>
-                            <li><a href="#">Sự kiện sắp tới</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">NBK'S FACE</a></li>
-                    <li><a href="#">TUYỂN DỤNG</a></li>
-                    <li><a href="#">NBK TÂY HỒ</a></li>
-                    <li><a href="#">NBK RUBIK</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                </ul>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-box">
+                            <div class="logo-icon">
+                                <span class="logo-3ds">3DS</span>
+                                <span class="logo-mechanical">MECHANICAL</span>
+                            </div>
+                            <div class="logo-tagline">FOR YOUR SATISFACTION</div>
+                        </div>
+                    </a>
+                </div>
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link">Thanh Ren <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#">Thanh ren mạ kẽm</a>
+                                <a href="#">Thanh ren inox</a>
+                                <a href="#">Thanh ren đen</a>
+                            </div>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link">Đai Treo <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#">Đai treo ống</a>
+                                <a href="#">Đai treo máng cáp</a>
+                                <a href="#">Clamp đai treo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Nở Đạn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">UBolt</a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link">Bulong - Ốc Vít <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#">Bulong neo móng</a>
+                                <a href="#">Bulong lục giác</a>
+                                <a href="#">Ốc vít các loại</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kẹp Xà Gồ</a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#" class="nav-link">Thanh Unistrut <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="#">Thép hình U</a>
+                                <a href="#">Thép hình V</a>
+                                <a href="#">Thép hình I</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#lien-he" class="nav-link">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h2>NGÔI TRƯỜNG HẠNH PHÚC</h2>
-                <p>Nơi ươm mầm tài năng và nhân cách cho thế hệ tương lai</p>
-                <a href="#" class="btn">ĐĂNG KÝ TUYỂN SINH</a>
-            </div>
-        </section>
-
-        <!-- Education System Section -->
-        <section class="education-system">
-            <div class="container">
-                <div class="section-title">
-                    <h2>HỆ THỐNG GIÁO DỤC NGUYỄN BỈNH KHIÊM - CẦU GIẤY</h2>
-                    <div class="line"></div>
-                </div>
-                <div class="system-grid">
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7236192225000_3e2622ca7e2ebf87b615dc365e30b857.jpg');"></div>
-                        <h3>TIỂU HỌC</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7240264583912_ed1fc0b36f73f16459401508db81a9cd.jpg');"></div>
-                        <h3>THCS</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7240286398863_37ee9bbb104428670574cc895a76a97f.jpg');"></div>
-                        <h3>THPT</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7240286684368_40e139614d90abdf92515e4ddc387b63.jpg');"></div>
-                        <h3>TRUNG TÂM<br>TRẢI NGHIỆM SÁNG TẠO<br>VĨNH YÊN - HOÀI ĐỨC</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7369539714738_6c17b3681251eab7bc8d23272929ebfb.jpg');"></div>
-                        <h3>SCHOOL BUS</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7374371081500_0c8b1a47ebb87d054cdeb98bbc686e0d.jpg');"></div>
-                        <h3>BẾP ĂN</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('z7375610700343_1d71849e8e78750f1f6d404459617524.jpg');"></div>
-                        <h3>CLB NGHỆ THUẬT<br>NGOÀI GIỜ</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                    <a href="#" class="system-card">
-                        <div class="card-bg" style="background-image: url('20.jpg');"></div>
-                        <h3>TÂM LÝ<br>HỌC ĐƯỜNG</h3>
-                        <div class="card-bar"></div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sketch Decoration -->
-        <div class="sketch-decoration"></div>
-
-        <!-- News Section -->
-        <section class="news">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="news-heading">TIN TỨC & SỰ KIỆN</h2>
-                    <p class="news-subheading">TỔNG HỢP TIN TỨC VÀ SỰ KIỆN MỚI NHẤT TỪ TRƯỜNG.</p>
-                    <div class="line"></div>
-                </div>
-                <div class="news-grid">
-                    <!-- News Item 1 -->
-                    <div class="news-card">
-                        <div class="news-img">
-                            <img src="z7244480566395_98f137b452bc4b98911c3210bea21f97.jpg" alt="News 1">
-                        </div>
-                        <div class="news-content">
-                            <h3><a href="#">TÂM HOẠT ĐỘNG TRẢI NGHIỆM (TRIỂN KHAI HƯỚNG NGHIỆP THEO DÒNG NĂM 2023)</a></h3>
-                        </div>
-                    </div>
-                    <!-- News Item 2 -->
-                    <div class="news-card">
-                        <div class="news-img">
-                            <img src="25.jpg" alt="News 2">
-                        </div>
-                        <div class="news-content">
-                            <h3><a href="#">HỌC SINH LỚP 1 VÀ NHỮNG TRẢI NGHIỆM ĐẦU TIÊN</a></h3>
-                        </div>
-                    </div>
-                    <!-- News Item 3 -->
-                    <div class="news-card">
-                        <div class="news-img">
-                            <img src="z7369539714738_6c17b3681251eab7bc8d23272929ebfb.jpg" alt="News 3">
-                        </div>
-                        <div class="news-content">
-                            <h3><a href="#">LỄ KÝ KẾT HỢP TÁC TRƯỜNG TIỂU HỌC NGUYỄN BỈNH KHIÊM - CẦU GIẤY & CÁC TRƯỜNG MẦM NON</a></h3>
-                        </div>
-                    </div>
-                    <!-- News Item 4 -->
-                    <div class="news-card">
-                        <div class="news-img">
-                            <img src="z7374371081500_0c8b1a47ebb87d054cdeb98bbc686e0d.jpg" alt="News 4">
-                        </div>
-                        <div class="news-content">
-                            <h3><a href="#">CHƯƠNG TRÌNH BIỂU DIỄN NGHỆ THUẬT ĐẶC SẮC</a></h3>
+    <!-- HERO BANNER SLIDER -->
+    <section class="hero-slider">
+        <div class="slides-wrapper" id="slidesWrapper">
+            <div class="slide slide-1">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <span class="slide-tag">Nhà cung cấp uy tín hàng đầu Việt Nam</span>
+                        <h1 class="slide-title">THANH REN & PHỤ KIỆN<br><span>CƠ KHÍ CHẤT LƯỢNG CAO</span></h1>
+                        <p class="slide-desc">Chuyên cung cấp thanh ren, đai treo, bulong ốc vít và các phụ kiện cơ khí tiêu chuẩn quốc tế</p>
+                        <div class="slide-actions">
+                            <a href="#san-pham" class="btn-primary">Xem Sản Phẩm</a>
+                            <a href="#lien-he" class="btn-outline">Liên Hệ Ngay</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Floating Widgets -->
-        <div class="floating-social">
-            <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-btn zalo">Zalo</a>
+            <div class="slide slide-2">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <span class="slide-tag">Phân phối toàn quốc</span>
+                        <h1 class="slide-title">ĐAI TREO & HỆ GIÁ ĐỠ<br><span>TIÊU CHUẨN QUỐC TẾ</span></h1>
+                        <p class="slide-desc">Đáp ứng mọi nhu cầu về hệ thống đỡ ống, máng cáp trong các công trình xây dựng</p>
+                        <div class="slide-actions">
+                            <a href="#san-pham" class="btn-primary">Khám Phá Ngay</a>
+                            <a href="#du-an" class="btn-outline">Dự Án Tiêu Biểu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <span class="slide-tag">Cam kết chất lượng</span>
+                        <h1 class="slide-title">BULONG NEO MÓNG<br><span>& NỞ ĐẠN CAO CẤP</span></h1>
+                        <p class="slide-desc">Sản phẩm đạt chuẩn ISO, phù hợp các công trình dân dụng, công nghiệp quy mô lớn</p>
+                        <div class="slide-actions">
+                            <a href="#san-pham" class="btn-primary">Tìm Hiểu Thêm</a>
+                            <a href="tel:0912345678" class="btn-outline">Gọi Tư Vấn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="consult-widget">
-            <div class="robot-icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="AI Tuvan" onerror="this.src='https://cdn-icons-png.flaticon.com/512/4712/4712035.png'">
-                <span class="tooltip">AI Tuyển Sinh</span>
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
             </div>
-            <a href="tel:0987266630" class="consult-btn">Tư vấn online 0987.266.630</a>
-            <a href="#" class="zalo-chat-btn"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo"></a>
+            <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
         </div>
+    </section>
 
-        <!-- Video Library Section -->
-        <section class="video-library">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="video-heading">THƯ VIỆN VIDEO</h2>
-                    <p class="video-subheading">VIDEO HOẠT ĐỘNG CỦA TRƯỜNG NGUYỄN BỈNH KHIÊM</p>
-                    <div class="line"></div>
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-industry"></i>
+                    <div>
+                        <strong>10+</strong>
+                        <span>Năm kinh nghiệm</span>
+                    </div>
                 </div>
-                <div class="video-grid">
-                    <!-- Video Item 1 -->
-                    <div class="video-card">
-                        <div class="video-thumb">
-                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>[Mashup] VIỆT NAM TỬ TẾ - Thank you | Nguyen Binh Khiem Version</h3>
-                            <p>Mashup Việt Nam tử tế - Thank you | Nguyen Binh Khiem Version</p>
+                <div class="stat-item">
+                    <i class="fas fa-box-open"></i>
+                    <div>
+                        <strong>500+</strong>
+                        <span>Sản phẩm đa dạng</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <strong>1000+</strong>
+                        <span>Khách hàng tin tưởng</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-truck"></i>
+                    <div>
+                        <strong>63</strong>
+                        <span>Tỉnh thành phân phối</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 01 - VỀ CHÚNG TÔI -->
+    <section class="about-section" id="ve-chung-toi">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Nhà máy 3DS Việt Nam">
+                        <div class="about-badge">
+                            <span>Thành lập</span>
+                            <strong>2010</strong>
                         </div>
                     </div>
-                    <!-- Video Item 2 -->
-                    <div class="video-card">
-                        <div class="video-thumb">
-                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="about-content">
+                    <div class="section-label">01</div>
+                    <h2 class="section-title">Về Chúng Tôi</h2>
+                    <div class="title-bar"></div>
+                    <p>Công ty TNHH 3DS Việt Nam tiền thân là <strong>Xưởng Cơ khí Bình Minh</strong>, được thành lập từ năm 2010. Trải qua hơn 10 năm phát triển, chúng tôi đã khẳng định vị thế là một trong những nhà cung cấp vật tư phụ cơ khí uy tín hàng đầu tại Việt Nam.</p>
+                    <p>Chúng tôi chuyên cung cấp các sản phẩm: <strong>Thanh ren, Đai treo, Nở đạn, UBolt, Bulong - Ốc vít, Kẹp xà gồ, Thanh Unistrut, Thép hình U-V-I</strong> và nhiều phụ kiện cơ khí khác phục vụ các công trình xây dựng dân dụng và công nghiệp.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sản phẩm đạt tiêu chuẩn ISO quốc tế</span>
                         </div>
-                        <div class="video-info">
-                            <h3>NHỮNG NHÀ GIÁO TÀI NĂNG...</h3>
-                            <p>Đội ngũ giáo viên NBK - Những nhà tâm lý, giáo dục đầy tài năng</p>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Giao hàng nhanh chóng toàn quốc</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tư vấn kỹ thuật miễn phí 24/7</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Giá cạnh tranh, chính sách ưu đãi</span>
                         </div>
                     </div>
-                    <!-- Video Item 3 -->
-                    <div class="video-card">
-                        <div class="video-thumb">
-                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=placeholder3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="#lien-he" class="btn-red">Liên Hệ Tư Vấn <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 02 - CAM KẾT -->
+    <section class="commitment-section">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-label-white">02</div>
+                <h2 class="section-title-white">Cam Kết Của Chúng Tôi</h2>
+                <div class="title-bar-center"></div>
+                <p class="section-desc-white">Chúng tôi cam kết mang đến sản phẩm và dịch vụ tốt nhất cho khách hàng</p>
+            </div>
+            <div class="commitment-grid">
+                <div class="commitment-item">
+                    <div class="commit-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Chất Lượng Đảm Bảo</h3>
+                    <p>Tất cả sản phẩm đều được kiểm tra chất lượng nghiêm ngặt theo tiêu chuẩn ISO trước khi đến tay khách hàng</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commit-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3>Giao Hàng Nhanh</h3>
+                    <p>Hệ thống logistics mạnh mẽ đảm bảo giao hàng đúng hẹn đến mọi tỉnh thành trên toàn quốc</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commit-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Hỗ Trợ 24/7</h3>
+                    <p>Đội ngũ kỹ thuật viên giàu kinh nghiệm luôn sẵn sàng tư vấn và hỗ trợ khách hàng mọi lúc</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commit-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Giá Cạnh Tranh</h3>
+                    <p>Chính sách giá minh bạch, cạnh tranh với nhiều ưu đãi hấp dẫn cho đại lý và khách hàng thân thiết</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Bảo Hành Chính Hãng</h3>
+                    <p>Chế độ bảo hành sản phẩm rõ ràng, minh bạch. Đổi trả dễ dàng khi sản phẩm có lỗi từ nhà sản xuất</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commit-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Hợp Tác Lâu Dài</h3>
+                    <p>Xây dựng quan hệ đối tác bền vững với chính sách hoa hồng hấp dẫn và nhiều ưu đãi độc quyền</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 03 - SẢN PHẨM -->
+    <section class="products-section" id="san-pham">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-label">03</div>
+                <h2 class="section-title">Danh Mục Sản Phẩm</h2>
+                <div class="title-bar-center red"></div>
+                <p class="section-desc">Đa dạng sản phẩm vật tư phụ cơ khí, phụ kiện xây dựng chất lượng cao</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Thanh Ren">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
                         </div>
-                        <div class="video-info">
-                            <h3>ĐỘI NGŨ GIÁO VIÊN NBK - ...</h3>
-                            <p>Tâm lý học đường NBK - Đồng hành cùng con bước vào tuổi dậy thì</p>
+                    </div>
+                    <div class="product-info">
+                        <h3>Thanh Ren</h3>
+                        <p>Thanh ren mạ kẽm, inox, đen các kích cỡ M6 đến M42</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80" alt="Đai Treo">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Đai Treo</h3>
+                        <p>Hệ thống đai treo ống, máng cáp tiêu chuẩn quốc tế</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400&q=80" alt="Nở Đạn">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nở Đạn</h3>
+                        <p>Nở đạn các loại: nở côn, nở ống, nở nêm chất lượng cao</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=400&q=80" alt="UBolt">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>UBolt</h3>
+                        <p>UBolt kẹp ống các kích cỡ từ DN15 đến DN600</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1609666514390-27b0d4eb37b1?w=400&q=80" alt="Bulong Ốc Vít">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bulong - Ốc Vít</h3>
+                        <p>Bulong lục giác, bulong neo móng, ốc vít các loại</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&q=80" alt="Kẹp Xà Gồ">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kẹp Xà Gồ</h3>
+                        <p>Kẹp xà gồ beam clamp kẹp dầm chữ I, C, H các loại</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1605367563660-5c4d77f7b34e?w=400&q=80" alt="Thanh Unistrut">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Thanh Unistrut</h3>
+                        <p>Thép hình U, V, C dập lỗ hệ thống giá đỡ ống</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=400&q=80" alt="Thép Hình">
+                        <div class="product-overlay">
+                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Thép Hình U-V-I</h3>
+                        <p>Thép hình các loại: thép chữ U, V, I tiêu chuẩn JIS</p>
+                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="#" class="btn-red-outline">Xem Tất Cả Sản Phẩm <i class="fas fa-th-large"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 04 - DỰ ÁN -->
+    <section class="projects-section" id="du-an">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-label">04</div>
+                <h2 class="section-title">Dự Án Cung Cấp</h2>
+                <div class="title-bar-center red"></div>
+                <p class="section-desc">Các công trình tiêu biểu chúng tôi đã cung cấp vật tư, phụ kiện</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card large-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Dự án Gamuda Gardens">
+                        <div class="project-overlay">
+                            <h3>Khu Đô Thị Gamuda Gardens</h3>
+                            <p>Cung cấp: Thanh ren, đai treo, ubolt hệ thống MEP</p>
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=400&q=80" alt="Dự án Golden Palace">
+                        <div class="project-overlay">
+                            <h3>Chung Cư Golden Palace</h3>
+                            <p>Cung cấp: Kẹp xà gồ, nở đạn, bulong neo móng</p>
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&q=80" alt="Dự án Vinhomes">
+                        <div class="project-overlay">
+                            <h3>Vinhomes Smart City</h3>
+                            <p>Cung cấp: Thanh unistrut, thép hình, phụ kiện giá đỡ</p>
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&q=80" alt="Dự án KCN">
+                        <div class="project-overlay">
+                            <h3>KCN Long Hậu - Long An</h3>
+                            <p>Cung cấp: Toàn bộ hệ thống vật tư phụ cơ khí</p>
+                            <a href="#">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?w=400&q=80" alt="Bệnh viện">
+                        <div class="project-overlay">
+                            <h3>Bệnh Viện Đa Khoa Quốc Tế</h3>
+                            <p>Cung cấp: Hệ thống đai treo ống kỹ thuật y tế</p>
+                            <a href="#">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Leadership Section -->
-        <section class="leadership">
-            <div class="sketch-decoration-top"></div>
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="leadership-heading">ĐỘI NGŨ LÃNH ĐẠO</h2>
-                    <p class="leadership-subheading">NHỮNG CON NGƯỜI LÀM NÊN THƯƠNG HIỆU</p>
-                    <div class="line"></div>
-                </div>
-                <div class="leadership-grid">
-                    <div class="leadership-card">
-                        <div class="leader-img">
-                            <img src="1.jpg" alt="Nhà giáo TS. Nguyễn Văn Hòa" onerror="this.src='https://via.placeholder.com/200'">
-                        </div>
-                        <h3 class="leader-name">NHÀ GIÁO TS. NGUYỄN VĂN HÒA</h3>
-                        <p class="leader-role">Chủ tịch HĐQT - Người sáng lập</p>
+    <!-- SECTION 05 - TIN TỨC -->
+    <section class="news-section" id="tin-tuc">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-label">05</div>
+                <h2 class="section-title">Tin Tức Nổi Bật</h2>
+                <div class="title-bar-center red"></div>
+                <p class="section-desc">Cập nhật thông tin mới nhất về sản phẩm và ngành cơ khí xây dựng</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Tin tức nổi bật">
+                        <span class="news-tag">Sản phẩm mới</span>
                     </div>
-                    <div class="leadership-card">
-                        <div class="leader-img">
-                            <img src="2.jpg" alt="Nhà giáo Nguyễn Thu Hòa" onerror="this.src='https://via.placeholder.com/200'">
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar"></i> 20/03/2025</span>
+                            <span><i class="fas fa-tag"></i> Sản phẩm</span>
                         </div>
-                        <h3 class="leader-name">NHÀ GIÁO NGUYỄN THU HÒA</h3>
-                        <p class="leader-role">Thành viên HĐQT</p>
+                        <h3><a href="#">Ra mắt dòng thanh ren inox 316 chống ăn mòn cao cấp cho môi trường biển</a></h3>
+                        <p>3DS Việt Nam vừa ra mắt dòng sản phẩm thanh ren inox 316 với khả năng chống ăn mòn vượt trội, phù hợp cho các công trình ven biển và môi trường hóa chất...</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-side">
+                    <div class="news-card small">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=400&q=80" alt="Tin tức">
+                            <span class="news-tag">Kỹ thuật</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="fas fa-calendar"></i> 15/03/2025</span>
+                            </div>
+                            <h3><a href="#">Hướng dẫn lựa chọn kích thước thanh ren phù hợp cho công trình</a></h3>
+                            <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="news-card small">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&q=80" alt="Tin tức">
+                            <span class="news-tag">Thị trường</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="fas fa-calendar"></i> 10/03/2025</span>
+                            </div>
+                            <h3><a href="#">Xu hướng sử dụng hệ giá đỡ Unistrut trong xây dựng công nghiệp 2025</a></h3>
+                            <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="news-card small">
+                        <div class="news-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Tin tức">
+                            <span class="news-tag">Sự kiện</span>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span><i class="fas fa-calendar"></i> 05/03/2025</span>
+                            </div>
+                            <h3><a href="#">3DS Việt Nam tham gia triển lãm Vietbuild 2025 với nhiều sản phẩm mới</a></h3>
+                            <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Consultation Section -->
-        <section class="consultation">
-            <div class="container">
-                <div class="section-title">
-                    <h2 class="consult-heading">ĐĂNG KÝ TƯ VẤN</h2>
-                    <p class="consult-desc">Đăng ký Email để nhận tin tức mới nhất từ chúng tôi được gửi đến hộp thư đến của bạn!</p>
-                </div>
-                <form class="consult-form">
-                    <input type="text" placeholder="Họ & tên" required>
-                    <input type="tel" placeholder="Số điện thoại" required>
-                    <input type="email" placeholder="Email *" required>
-                    <button type="submit">ĐĂNG KÝ</button>
-                </form>
+            <div class="center-btn">
+                <a href="#" class="btn-red-outline">Xem Tất Cả Tin Tức <i class="fas fa-newspaper"></i></a>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="lien-he">
+        <div class="container">
+            <div class="section-header-center">
+                <h2 class="section-title-white">Liên Hệ Với Chúng Tôi</h2>
+                <div class="title-bar-center"></div>
+                <p class="section-desc-white">Đội ngũ tư vấn luôn sẵn sàng giải đáp mọi thắc mắc của bạn</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrap">
+                    <h3>Gửi Yêu Cầu Tư Vấn</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Họ và tên *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Số điện thoại *" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Tên công ty / dự án">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Nội dung yêu cầu / sản phẩm cần tư vấn *" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Gửi Yêu Cầu
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info-wrap">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Địa chỉ văn phòng:</strong>
+                                <p>Số 10, LK34 Khu Đô thị mới Vân Canh, Xã Vân Canh, Hoài Đức - Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong>Hotline kinh doanh:</strong>
+                                <p><a href="tel:0912345678">0912.345.678</a> | <a href="tel:0987654321">0987.654.321</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email:</strong>
+                                <p><a href="mailto:3dsvietnam@gmail.com">3dsvietnam@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Giờ làm việc:</strong>
+                                <p>Thứ 2 - Thứ 7: 8:00 - 18:00<br>Chủ nhật: 8:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn yt"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-btn zalo"><span>Z</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- MAP -->
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6!2d105.7!3d21.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAwJzAwLjAiTiAxMDXCsDQyJzAwLjAiRQ!5e0!3m2!1svi!2svn!4v1000000000000!5m2!1svi!2svn" 
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ 3DS Việt Nam"></iframe>
+    </div>
 
-    <footer>
-        <div class="main-footer">
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-top">
             <div class="container">
-                <div class="footer-content">
-                    <div class="footer-info">
-                        <h2 class="footer-school-name">HỆ THỐNG GIÁO DỤC CHẤT LƯỢNG CAO NGUYỄN BỈNH KHIÊM - CẦU GIẤY</h2>
-                        <ul class="contact-list">
-                            <li><strong>Địa chỉ:</strong> Số 6 Trần Quốc Hoàn - phường Nghĩa Đô - Hà Nội - Việt Nam.</li>
-                            <li><strong>Văn phòng Tiểu học:</strong> 0243.793.1333 | <strong>Văn phòng THCS:</strong> 0243.791.0263</li>
-                            <li><strong>Văn phòng THPT:</strong> 0243.754.5433 | <strong>Lễ Tân:</strong> 0242.243.1355</li>
-                            <li><strong>Email:</strong> info@nbk.edu.vn | <strong>Website:</strong> www.nbk.edu.vn</li>
-                            <li><strong>Facebook:</strong> fb.com/nbk.edu.vn | <strong>Youtube:</strong> https://www.youtube.com/@nbkschool1993</li>
+                <div class="footer-grid">
+                    <div class="footer-col footer-about">
+                        <div class="footer-logo">
+                            <span class="logo-3ds-footer">3DS</span>
+                            <div>
+                                <span class="logo-mech-footer">MECHANICAL</span>
+                                <span class="logo-tag-footer">FOR YOUR SATISFACTION</span>
+                            </div>
+                        </div>
+                        <p>Chuyên cung cấp vật tư phụ cơ khí, phụ kiện xây dựng chất lượng cao cho các công trình dân dụng và công nghiệp trên toàn quốc.</p>
+                        <div class="footer-badges">
+                            <div class="badge-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Đã thông báo<br>Bộ Công Thương</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="fas fa-award"></i>
+                                <span>ISO 9001<br>Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Sản Phẩm Chính</h4>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Thanh Ren Mạ Kẽm</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Đai Treo Ống</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Nở Đạn Các Loại</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> UBolt Kẹp Ống</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Bulong - Ốc Vít</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Kẹp Xà Gồ</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Thanh Unistrut</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Thép Hình U-V-I</a></li>
                         </ul>
                     </div>
-                    <div class="footer-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9246864073355!2d105.79284231533214!3d21.03570298599458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4a44485555%3A0x6a22330666016335!2zVHLGsOG7nW5nIFRIQ1MgJmFtcCBUSFQgTmd1eQ!5e0!3m2!1svi!2s!4v1620800000000!5m2!1svi!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Chính Sách</h4>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách thanh toán</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách vận chuyển</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách đổi trả</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách bảo mật</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Điều khoản sử dụng</a></li>
+                        </ul>
+                        <h4 class="footer-title" style="margin-top:24px">Hỗ Trợ</h4>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Hướng dẫn đặt hàng</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Liên hệ hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-contact-col">
+                        <h4 class="footer-title">Liên Hệ</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Số 10, LK34 Khu ĐT mới Vân Canh, Hoài Đức, Hà Nội</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span><a href="tel:0912345678">0912.345.678</a> (Kinh doanh 1)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span><a href="tel:0987654321">0987.654.321</a> (Kinh doanh 2)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span><a href="mailto:3dsvietnam@gmail.com">3dsvietnam@gmail.com</a></span>
+                            </li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="#" class="fsocial-btn"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="fsocial-btn"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="fsocial-btn"><i class="fab fa-tiktok"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-footer">
+        <div class="footer-bottom">
             <div class="container">
-                <div class="bottom-footer-content">
-                    <!-- <div class="copyright">
-                        Copyright © 2018 Bản quyền thuộc về TRƯỜNG THCS&THPT NGUYỄN BỈNH KHIÊM - CẦU GIẤY | Thiết kế và phát triển bởi P.A Việt Nam
-                    </div> -->
-                    <div class="online-stats">
-                        Đang Online: 13 | Tổng lượt online: 71,632,129
-                    </div>
-                    <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        <a href="#" class="social-icon"><i class="fas fa-plus"></i></a>
-                    </div>
-                </div>
+                <p>© 2025 Công Ty TNHH 3DS Việt Nam. Tất cả quyền được bảo lưu.</p>
+                <p>Thiết kế bởi <strong>3DS Web Team</strong> | GPKD: 0109XXXXXXX</p>
             </div>
         </div>
     </footer>
