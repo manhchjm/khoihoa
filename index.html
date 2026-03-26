@@ -3,494 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3DS Mechanical - Vật Tư Phụ 3DS | Nhà Cung Cấp Uy Tín Hàng Đầu</title>
-    <meta name="description" content="Công ty TNHH 3DS Việt Nam - Chuyên cung cấp thanh ren, đai treo, nở đạn, bulong, ốc vít, kẹp xà gồ, thanh Unistrut và các phụ kiện cơ khí chất lượng cao.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>TICA Air Conditioning - Đức Phát | Điều Hòa Công Nghiệp</title>
+    <meta name="description" content="Công ty TNHH Thương Mại-Dịch Vụ và Xây Lắp Đức Phát - Chuyên cung cấp và lắp đặt điều hòa công nghiệp TICA tại Việt Nam. Hotline: 0904.845.152">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- FLOATING CONTACT BUTTONS -->
-    <div class="floating-buttons">
-        <a href="tel:0912345678" class="float-btn phone-btn" title="Gọi ngay">
-            <i class="fas fa-phone"></i>
-            <span class="float-label">Gọi ngay</span>
-        </a>
-        <a href="https://zalo.me/0912345678" class="float-btn zalo-btn" title="Chat Zalo" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
-            <span class="float-label">Zalo</span>
-        </a>
-        <a href="https://m.me/" class="float-btn fb-btn" title="Facebook Messenger" target="_blank">
-            <i class="fab fa-facebook-messenger"></i>
-            <span class="float-label">Messenger</span>
-        </a>
-    </div>
+    <!-- ========== HEADER TOP ========== -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/tica-logo.png" alt="TICA Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="logo-fallback">
+                                <div class="logo-icon">
+                                    <svg viewBox="0 0 50 50" width="40" height="40">
+                                        <circle cx="25" cy="25" r="22" fill="none" stroke="#1565c0" stroke-width="3"/>
+                                        <path d="M25 8 L25 42 M8 25 L42 25" stroke="#1565c0" stroke-width="2"/>
+                                        <ellipse cx="25" cy="25" rx="12" ry="22" fill="none" stroke="#1565c0" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="logo-text">TICA</span>
+                                <span class="logo-reg">®</span>
+                            </div>
+                        </a>
+                    </div>
 
-    <!-- BACK TO TOP -->
-    <button class="back-to-top" id="backToTop" title="Lên đầu trang">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Tìm kiếm..." id="search-input">
+                        <button type="button" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
 
-    <!-- TOP BAR -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-inner">
-                <div class="top-bar-left">
-                    <a href="#" class="top-link">
-                        <i class="fas fa-download"></i> Tải catalogue sản phẩm
-                    </a>
-                    <span class="divider">|</span>
-                    <a href="#" class="top-link">
-                        <i class="fas fa-envelope"></i> 3dsvietnam@gmail.com
-                    </a>
-                </div>
-                <div class="top-bar-right">
-                    <a href="tel:0912345678" class="hotline-btn">
-                        <i class="fas fa-headset"></i>
-                        <span>Hotline: <strong>0912.345.678</strong></span>
-                    </a>
-                    <div class="search-box">
-                        <input type="text" placeholder="Tìm kiếm sản phẩm..." id="searchInput">
-                        <button><i class="fas fa-search"></i></button>
+                    <!-- Contact Info -->
+                    <div class="header-contacts">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-number">0904.845.152</span>
+                                <span class="contact-label">Hỗ trợ tư vấn</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-number">0904.845.152</span>
+                                <span class="contact-label">Góp ý, khiếu nại</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- MAIN HEADER -->
-    <header class="main-header" id="mainHeader">
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    <a href="index.html">
-                        <div class="logo-box">
-                            <div class="logo-icon">
-                                <span class="logo-3ds">3DS</span>
-                                <span class="logo-mechanical">MECHANICAL</span>
-                            </div>
-                            <div class="logo-tagline">FOR YOUR SATISFACTION</div>
-                        </div>
-                    </a>
-                </div>
-                <nav class="main-nav" id="mainNav">
-                    <ul class="nav-list">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-inner">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li class="nav-item active"><a href="#" class="nav-link">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">GIỚI THIỆU</a></li>
                         <li class="nav-item has-dropdown">
-                            <a href="#" class="nav-link">Thanh Ren <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown">
-                                <a href="#">Thanh ren mạ kẽm</a>
-                                <a href="#">Thanh ren inox</a>
-                                <a href="#">Thanh ren đen</a>
-                            </div>
+                            <a href="#" class="nav-link">SẢN PHẨM <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Water Cooled Screw Chiller</a></li>
+                                <li><a href="#">Air-cooled Screw Chiller</a></li>
+                                <li><a href="#">VRF Systems</a></li>
+                                <li><a href="#">Air Handling Units</a></li>
+                                <li><a href="#">Centrifugal Chiller</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item has-dropdown">
-                            <a href="#" class="nav-link">Đai Treo <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown">
-                                <a href="#">Đai treo ống</a>
-                                <a href="#">Đai treo máng cáp</a>
-                                <a href="#">Clamp đai treo</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Nở Đạn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">UBolt</a>
-                        </li>
-                        <li class="nav-item has-dropdown">
-                            <a href="#" class="nav-link">Bulong - Ốc Vít <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown">
-                                <a href="#">Bulong neo móng</a>
-                                <a href="#">Bulong lục giác</a>
-                                <a href="#">Ốc vít các loại</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Kẹp Xà Gồ</a>
-                        </li>
-                        <li class="nav-item has-dropdown">
-                            <a href="#" class="nav-link">Thanh Unistrut <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown">
-                                <a href="#">Thép hình U</a>
-                                <a href="#">Thép hình V</a>
-                                <a href="#">Thép hình I</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Tin Tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#lien-he" class="nav-link">Liên Hệ</a>
-                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">DỰ ÁN TIÊU BIỂU</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">TIN TỨC &amp; SỰ KIỆN</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">LIÊN HỆ</a></li>
                     </ul>
-                </nav>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                    <div class="lang-flags">
+                        <a href="#" class="flag-btn active" title="Tiếng Trung">
+                            <img src="https://flagcdn.com/w20/cn.png" alt="CN" width="22" height="16">
+                        </a>
+                        <a href="#" class="flag-btn" title="English">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="EN" width="22" height="16">
+                        </a>
+                        <a href="#" class="flag-btn" title="Tiếng Việt">
+                            <img src="https://flagcdn.com/w20/vn.png" alt="VN" width="22" height="16">
+                        </a>
+                    </div>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <!-- HERO BANNER SLIDER -->
-    <section class="hero-slider">
-        <div class="slides-wrapper" id="slidesWrapper">
-            <div class="slide slide-1">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <span class="slide-tag">Nhà cung cấp uy tín hàng đầu Việt Nam</span>
-                        <h1 class="slide-title">THANH REN & PHỤ KIỆN<br><span>CƠ KHÍ CHẤT LƯỢNG CAO</span></h1>
-                        <p class="slide-desc">Chuyên cung cấp thanh ren, đai treo, bulong ốc vít và các phụ kiện cơ khí tiêu chuẩn quốc tế</p>
-                        <div class="slide-actions">
-                            <a href="#san-pham" class="btn-primary">Xem Sản Phẩm</a>
-                            <a href="#lien-he" class="btn-outline">Liên Hệ Ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide-2">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <span class="slide-tag">Phân phối toàn quốc</span>
-                        <h1 class="slide-title">ĐAI TREO & HỆ GIÁ ĐỠ<br><span>TIÊU CHUẨN QUỐC TẾ</span></h1>
-                        <p class="slide-desc">Đáp ứng mọi nhu cầu về hệ thống đỡ ống, máng cáp trong các công trình xây dựng</p>
-                        <div class="slide-actions">
-                            <a href="#san-pham" class="btn-primary">Khám Phá Ngay</a>
-                            <a href="#du-an" class="btn-outline">Dự Án Tiêu Biểu</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide slide-3">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="container">
-                        <span class="slide-tag">Cam kết chất lượng</span>
-                        <h1 class="slide-title">BULONG NEO MÓNG<br><span>& NỞ ĐẠN CAO CẤP</span></h1>
-                        <p class="slide-desc">Sản phẩm đạt chuẩn ISO, phù hợp các công trình dân dụng, công nghiệp quy mô lớn</p>
-                        <div class="slide-actions">
-                            <a href="#san-pham" class="btn-primary">Tìm Hiểu Thêm</a>
-                            <a href="tel:0912345678" class="btn-outline">Gọi Tư Vấn</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-controls">
-            <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-            <div class="slider-dots" id="sliderDots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
-            </div>
-            <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </section>
-
-    <!-- STATS BAR -->
-    <div class="stats-bar">
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero-section">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <i class="fas fa-industry"></i>
-                    <div>
-                        <strong>10+</strong>
-                        <span>Năm kinh nghiệm</span>
+            <div class="hero-layout">
+                <!-- Main Slider -->
+                <div class="hero-slider">
+                    <div class="slider-wrapper" id="slider-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="slide active">
+                            <div class="slide-bg slide-1">
+                                <div class="slide-content">
+                                    <div class="slide-logo">
+                                        <div class="slide-logo-icon">
+                                            <svg viewBox="0 0 40 40" width="30" height="30">
+                                                <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                                                <path d="M20 5 L20 35 M5 20 L35 20" stroke="white" stroke-width="1.5"/>
+                                                <ellipse cx="20" cy="20" rx="10" ry="18" fill="none" stroke="white" stroke-width="1.5"/>
+                                            </svg>
+                                        </div>
+                                        <span>TICA</span>
+                                    </div>
+                                    <h1 class="slide-title">TICA AIR CONDITIONING</h1>
+                                    <div class="slide-badge">
+                                        <span class="badge-num">NO.1</span>
+                                        <span class="badge-text">in China</span>
+                                    </div>
+                                    <p class="slide-subtitle">WONDERFUL AIR · WONDERFUL WORLD</p>
+                                    <div class="slide-tags">
+                                        <span class="tag">Mainstay Products</span>
+                                        <span class="tag tag-blue">TICA Chiller</span>
+                                    </div>
+                                    <div class="slide-tags">
+                                        <span class="tag">TICA Air Handling Units</span>
+                                    </div>
+                                    <div class="slide-tags">
+                                        <span class="tag">Flagship Products</span>
+                                        <span class="tag tag-blue">TICA VRF</span>
+                                    </div>
+                                </div>
+                                <div class="slide-image">
+                                    <div class="product-showcase">
+                                        <div class="product-img-placeholder chiller-img">
+                                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/water-cooled-screw-chiller_1687764012.webp" 
+                                                 alt="TICA Chiller" 
+                                                 onerror="this.parentElement.innerHTML='<div class=\'product-icon\'><i class=\'fas fa-snowflake\'></i><span>TICA Chiller</span></div>'">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="slide-bg slide-2">
+                                <div class="slide-content">
+                                    <div class="slide-logo">
+                                        <div class="slide-logo-icon">
+                                            <svg viewBox="0 0 40 40" width="30" height="30">
+                                                <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                                                <path d="M20 5 L20 35 M5 20 L35 20" stroke="white" stroke-width="1.5"/>
+                                                <ellipse cx="20" cy="20" rx="10" ry="18" fill="none" stroke="white" stroke-width="1.5"/>
+                                            </svg>
+                                        </div>
+                                        <span>TICA</span>
+                                    </div>
+                                    <h2 class="slide-title">TICA VRF SYSTEMS</h2>
+                                    <div class="slide-badge">
+                                        <span class="badge-num">NO.1</span>
+                                        <span class="badge-text">in China</span>
+                                    </div>
+                                    <p class="slide-subtitle">Giải Pháp Điều Hòa Thông Minh</p>
+                                    <div class="slide-tags">
+                                        <span class="tag tag-blue">TICA TIMS VRF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <div class="slide-bg slide-3">
+                                <div class="slide-content">
+                                    <div class="slide-logo">
+                                        <div class="slide-logo-icon">
+                                            <svg viewBox="0 0 40 40" width="30" height="30">
+                                                <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                                                <path d="M20 5 L20 35 M5 20 L35 20" stroke="white" stroke-width="1.5"/>
+                                                <ellipse cx="20" cy="20" rx="10" ry="18" fill="none" stroke="white" stroke-width="1.5"/>
+                                            </svg>
+                                        </div>
+                                        <span>TICA</span>
+                                    </div>
+                                    <h2 class="slide-title">AIR HANDLING UNITS</h2>
+                                    <p class="slide-subtitle">Hệ Thống Xử Lý Không Khí Chuyên Nghiệp</p>
+                                    <div class="slide-tags">
+                                        <span class="tag tag-blue">TICA AHU</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-box-open"></i>
-                    <div>
-                        <strong>500+</strong>
-                        <span>Sản phẩm đa dạng</span>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <div>
-                        <strong>1000+</strong>
-                        <span>Khách hàng tin tưởng</span>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-truck"></i>
-                    <div>
-                        <strong>63</strong>
-                        <span>Tỉnh thành phân phối</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- SECTION 01 - VỀ CHÚNG TÔI -->
-    <section class="about-section" id="ve-chung-toi">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="about-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Nhà máy 3DS Việt Nam">
-                        <div class="about-badge">
-                            <span>Thành lập</span>
-                            <strong>2010</strong>
-                        </div>
+                    <!-- Slider Controls -->
+                    <button class="slider-btn slider-prev" id="slider-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn slider-next" id="slider-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
                     </div>
                 </div>
-                <div class="about-content">
-                    <div class="section-label">01</div>
-                    <h2 class="section-title">Về Chúng Tôi</h2>
-                    <div class="title-bar"></div>
-                    <p>Công ty TNHH 3DS Việt Nam tiền thân là <strong>Xưởng Cơ khí Bình Minh</strong>, được thành lập từ năm 2010. Trải qua hơn 10 năm phát triển, chúng tôi đã khẳng định vị thế là một trong những nhà cung cấp vật tư phụ cơ khí uy tín hàng đầu tại Việt Nam.</p>
-                    <p>Chúng tôi chuyên cung cấp các sản phẩm: <strong>Thanh ren, Đai treo, Nở đạn, UBolt, Bulong - Ốc vít, Kẹp xà gồ, Thanh Unistrut, Thép hình U-V-I</strong> và nhiều phụ kiện cơ khí khác phục vụ các công trình xây dựng dân dụng và công nghiệp.</p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Sản phẩm đạt tiêu chuẩn ISO quốc tế</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Giao hàng nhanh chóng toàn quốc</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Tư vấn kỹ thuật miễn phí 24/7</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Giá cạnh tranh, chính sách ưu đãi</span>
-                        </div>
-                    </div>
-                    <a href="#lien-he" class="btn-red">Liên Hệ Tư Vấn <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SECTION 02 - CAM KẾT -->
-    <section class="commitment-section">
-        <div class="container">
-            <div class="section-header-center">
-                <div class="section-label-white">02</div>
-                <h2 class="section-title-white">Cam Kết Của Chúng Tôi</h2>
-                <div class="title-bar-center"></div>
-                <p class="section-desc-white">Chúng tôi cam kết mang đến sản phẩm và dịch vụ tốt nhất cho khách hàng</p>
-            </div>
-            <div class="commitment-grid">
-                <div class="commitment-item">
-                    <div class="commit-icon"><i class="fas fa-medal"></i></div>
-                    <h3>Chất Lượng Đảm Bảo</h3>
-                    <p>Tất cả sản phẩm đều được kiểm tra chất lượng nghiêm ngặt theo tiêu chuẩn ISO trước khi đến tay khách hàng</p>
-                </div>
-                <div class="commitment-item">
-                    <div class="commit-icon"><i class="fas fa-shipping-fast"></i></div>
-                    <h3>Giao Hàng Nhanh</h3>
-                    <p>Hệ thống logistics mạnh mẽ đảm bảo giao hàng đúng hẹn đến mọi tỉnh thành trên toàn quốc</p>
-                </div>
-                <div class="commitment-item">
-                    <div class="commit-icon"><i class="fas fa-headset"></i></div>
-                    <h3>Hỗ Trợ 24/7</h3>
-                    <p>Đội ngũ kỹ thuật viên giàu kinh nghiệm luôn sẵn sàng tư vấn và hỗ trợ khách hàng mọi lúc</p>
-                </div>
-                <div class="commitment-item">
-                    <div class="commit-icon"><i class="fas fa-tags"></i></div>
-                    <h3>Giá Cạnh Tranh</h3>
-                    <p>Chính sách giá minh bạch, cạnh tranh với nhiều ưu đãi hấp dẫn cho đại lý và khách hàng thân thiết</p>
-                </div>
-                <div class="commitment-item">
-                    <div class="commit-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Bảo Hành Chính Hãng</h3>
-                    <p>Chế độ bảo hành sản phẩm rõ ràng, minh bạch. Đổi trả dễ dàng khi sản phẩm có lỗi từ nhà sản xuất</p>
-                </div>
-                <div class="commitment-item">
-                    <div class="commit-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>Hợp Tác Lâu Dài</h3>
-                    <p>Xây dựng quan hệ đối tác bền vững với chính sách hoa hồng hấp dẫn và nhiều ưu đãi độc quyền</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 03 - SẢN PHẨM -->
-    <section class="products-section" id="san-pham">
-        <div class="container">
-            <div class="section-header-center">
-                <div class="section-label">03</div>
-                <h2 class="section-title">Danh Mục Sản Phẩm</h2>
-                <div class="title-bar-center red"></div>
-                <p class="section-desc">Đa dạng sản phẩm vật tư phụ cơ khí, phụ kiện xây dựng chất lượng cao</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Thanh Ren">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                <!-- Sidebar Product List -->
+                <div class="hero-sidebar">
+                    <div class="sidebar-item">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/water-cooled-screw-chiller_1687764012.webp" 
+                             alt="Water Cooled Screw Chiller"
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'60\'><rect width=\'80\' height=\'60\' fill=\'%23e8f4fd\'/><text x=\'40\' y=\'35\' text-anchor=\'middle\' fill=\'%231565c0\' font-size=\'10\'>AC Unit</text></svg>'">
+                        <div class="sidebar-info">
+                            <h4>Water Cooled Screw Chiller</h4>
+                            <a href="#" class="contact-link">Liên hệ</a>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3>Thanh Ren</h3>
-                        <p>Thanh ren mạ kẽm, inox, đen các kích cỡ M6 đến M42</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80" alt="Đai Treo">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                    <div class="sidebar-item">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-air-cooled-flooded-screw_1687764139.webp" 
+                             alt="TICA air-cooled flooded screw"
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'60\'><rect width=\'80\' height=\'60\' fill=\'%23e8f4fd\'/><text x=\'40\' y=\'35\' text-anchor=\'middle\' fill=\'%231565c0\' font-size=\'10\'>AC Unit</text></svg>'">
+                        <div class="sidebar-info">
+                            <h4>TICA air-cooled flooded screw...</h4>
+                            <a href="#" class="contact-link">Liên hệ</a>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3>Đai Treo</h3>
-                        <p>Hệ thống đai treo ống, máng cáp tiêu chuẩn quốc tế</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400&q=80" alt="Nở Đạn">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                    <div class="sidebar-item">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tfd-h-ceiling-type-ahu-a3422g02_1687765072.webp" 
+                             alt="TFD-H Ceiling Type AHU"
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'60\'><rect width=\'80\' height=\'60\' fill=\'%23e8f4fd\'/><text x=\'40\' y=\'35\' text-anchor=\'middle\' fill=\'%231565c0\' font-size=\'10\'>AC Unit</text></svg>'">
+                        <div class="sidebar-info">
+                            <h4>TFD-H Ceiling Type AHU A3422G02</h4>
+                            <a href="#" class="contact-link">Liên hệ</a>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3>Nở Đạn</h3>
-                        <p>Nở đạn các loại: nở côn, nở ống, nở nêm chất lượng cao</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=400&q=80" alt="UBolt">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
+                    <div class="sidebar-item">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/modular-air-handling-unit_1687765174.webp" 
+                             alt="Modular Air Handling Unit"
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'60\'><rect width=\'80\' height=\'60\' fill=\'%23e8f4fd\'/><text x=\'40\' y=\'35\' text-anchor=\'middle\' fill=\'%231565c0\' font-size=\'10\'>AC Unit</text></svg>'">
+                        <div class="sidebar-info">
+                            <h4>Modular Air Handling Unit...</h4>
+                            <a href="#" class="contact-link">Liên hệ</a>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h3>UBolt</h3>
-                        <p>UBolt kẹp ống các kích cỡ từ DN15 đến DN600</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1609666514390-27b0d4eb37b1?w=400&q=80" alt="Bulong Ốc Vít">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Bulong - Ốc Vít</h3>
-                        <p>Bulong lục giác, bulong neo móng, ốc vít các loại</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&q=80" alt="Kẹp Xà Gồ">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Kẹp Xà Gồ</h3>
-                        <p>Kẹp xà gồ beam clamp kẹp dầm chữ I, C, H các loại</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1605367563660-5c4d77f7b34e?w=400&q=80" alt="Thanh Unistrut">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Thanh Unistrut</h3>
-                        <p>Thép hình U, V, C dập lỗ hệ thống giá đỡ ống</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=400&q=80" alt="Thép Hình">
-                        <div class="product-overlay">
-                            <a href="#" class="view-btn">Xem Chi Tiết</a>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Thép Hình U-V-I</h3>
-                        <p>Thép hình các loại: thép chữ U, V, I tiêu chuẩn JIS</p>
-                        <a href="#">Xem thêm <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="center-btn">
-                <a href="#" class="btn-red-outline">Xem Tất Cả Sản Phẩm <i class="fas fa-th-large"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 04 - DỰ ÁN -->
-    <section class="projects-section" id="du-an">
-        <div class="container">
-            <div class="section-header-center">
-                <div class="section-label">04</div>
-                <h2 class="section-title">Dự Án Cung Cấp</h2>
-                <div class="title-bar-center red"></div>
-                <p class="section-desc">Các công trình tiêu biểu chúng tôi đã cung cấp vật tư, phụ kiện</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card large-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Dự án Gamuda Gardens">
-                        <div class="project-overlay">
-                            <h3>Khu Đô Thị Gamuda Gardens</h3>
-                            <p>Cung cấp: Thanh ren, đai treo, ubolt hệ thống MEP</p>
-                            <a href="#">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=400&q=80" alt="Dự án Golden Palace">
-                        <div class="project-overlay">
-                            <h3>Chung Cư Golden Palace</h3>
-                            <p>Cung cấp: Kẹp xà gồ, nở đạn, bulong neo móng</p>
-                            <a href="#">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400&q=80" alt="Dự án Vinhomes">
-                        <div class="project-overlay">
-                            <h3>Vinhomes Smart City</h3>
-                            <p>Cung cấp: Thanh unistrut, thép hình, phụ kiện giá đỡ</p>
-                            <a href="#">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&q=80" alt="Dự án KCN">
-                        <div class="project-overlay">
-                            <h3>KCN Long Hậu - Long An</h3>
-                            <p>Cung cấp: Toàn bộ hệ thống vật tư phụ cơ khí</p>
-                            <a href="#">Xem chi tiết</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1515263487990-61b07816b324?w=400&q=80" alt="Bệnh viện">
-                        <div class="project-overlay">
-                            <h3>Bệnh Viện Đa Khoa Quốc Tế</h3>
-                            <p>Cung cấp: Hệ thống đai treo ống kỹ thuật y tế</p>
-                            <a href="#">Xem chi tiết</a>
+                    <div class="sidebar-item">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/inverter-direct-expansion-air_1687765275.webp" 
+                             alt="Inverter Direct Expansion Air"
+                             onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'60\'><rect width=\'80\' height=\'60\' fill=\'%23e8f4fd\'/><text x=\'40\' y=\'35\' text-anchor=\'middle\' fill=\'%231565c0\' font-size=\'10\'>AC Unit</text></svg>'">
+                        <div class="sidebar-info">
+                            <h4>Inverter Direct Expansion Air...</h4>
+                            <a href="#" class="contact-link">Liên hệ</a>
                         </div>
                     </div>
                 </div>
@@ -498,251 +275,431 @@
         </div>
     </section>
 
-    <!-- SECTION 05 - TIN TỨC -->
-    <section class="news-section" id="tin-tuc">
+    <!-- ========== HIGHLIGHTS SECTION ========== -->
+    <section class="highlights-section">
         <div class="container">
-            <div class="section-header-center">
-                <div class="section-label">05</div>
-                <h2 class="section-title">Tin Tức Nổi Bật</h2>
-                <div class="title-bar-center red"></div>
-                <p class="section-desc">Cập nhật thông tin mới nhất về sản phẩm và ngành cơ khí xây dựng</p>
-            </div>
-            <div class="news-grid">
-                <div class="news-card featured">
-                    <div class="news-img">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Tin tức nổi bật">
-                        <span class="news-tag">Sản phẩm mới</span>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span><i class="fas fa-calendar"></i> 20/03/2025</span>
-                            <span><i class="fas fa-tag"></i> Sản phẩm</span>
-                        </div>
-                        <h3><a href="#">Ra mắt dòng thanh ren inox 316 chống ăn mòn cao cấp cho môi trường biển</a></h3>
-                        <p>3DS Việt Nam vừa ra mắt dòng sản phẩm thanh ren inox 316 với khả năng chống ăn mòn vượt trội, phù hợp cho các công trình ven biển và môi trường hóa chất...</p>
-                        <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    <div class="highlight-content">
+                        <h3>Hỗ Trợ 24/7 – Tư Vấn Miễn Phí</h3>
+                        <p>Hỗ trợ khách hàng mỗi ngày</p>
                     </div>
                 </div>
-                <div class="news-side">
-                    <div class="news-card small">
-                        <div class="news-img">
-                            <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=400&q=80" alt="Tin tức">
-                            <span class="news-tag">Kỹ thuật</span>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span><i class="fas fa-calendar"></i> 15/03/2025</span>
-                            </div>
-                            <h3><a href="#">Hướng dẫn lựa chọn kích thước thanh ren phù hợp cho công trình</a></h3>
-                            <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <div class="news-card small">
-                        <div class="news-img">
-                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&q=80" alt="Tin tức">
-                            <span class="news-tag">Thị trường</span>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span><i class="fas fa-calendar"></i> 10/03/2025</span>
-                            </div>
-                            <h3><a href="#">Xu hướng sử dụng hệ giá đỡ Unistrut trong xây dựng công nghiệp 2025</a></h3>
-                            <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="news-card small">
-                        <div class="news-img">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Tin tức">
-                            <span class="news-tag">Sự kiện</span>
-                        </div>
-                        <div class="news-content">
-                            <div class="news-meta">
-                                <span><i class="fas fa-calendar"></i> 05/03/2025</span>
-                            </div>
-                            <h3><a href="#">3DS Việt Nam tham gia triển lãm Vietbuild 2025 với nhiều sản phẩm mới</a></h3>
-                            <a href="#" class="read-more">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
-                        </div>
+                    <div class="highlight-content">
+                        <h3>Giải Pháp Linh Hoạt</h3>
+                        <p>Đội ngũ lắp đặt chuyên nghiệp</p>
                     </div>
                 </div>
-            </div>
-            <div class="center-btn">
-                <a href="#" class="btn-red-outline">Xem Tất Cả Tin Tức <i class="fas fa-newspaper"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section class="contact-section" id="lien-he">
-        <div class="container">
-            <div class="section-header-center">
-                <h2 class="section-title-white">Liên Hệ Với Chúng Tôi</h2>
-                <div class="title-bar-center"></div>
-                <p class="section-desc-white">Đội ngũ tư vấn luôn sẵn sàng giải đáp mọi thắc mắc của bạn</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-form-wrap">
-                    <h3>Gửi Yêu Cầu Tư Vấn</h3>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" placeholder="Họ và tên *" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" placeholder="Số điện thoại *" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Tên công ty / dự án">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Nội dung yêu cầu / sản phẩm cần tư vấn *" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">
-                            <i class="fas fa-paper-plane"></i> Gửi Yêu Cầu
-                        </button>
-                    </form>
-                </div>
-                <div class="contact-info-wrap">
-                    <h3>Thông Tin Liên Hệ</h3>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <strong>Địa chỉ văn phòng:</strong>
-                                <p>Số 10, LK34 Khu Đô thị mới Vân Canh, Xã Vân Canh, Hoài Đức - Hà Nội</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <strong>Hotline kinh doanh:</strong>
-                                <p><a href="tel:0912345678">0912.345.678</a> | <a href="tel:0987654321">0987.654.321</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <strong>Email:</strong>
-                                <p><a href="mailto:3dsvietnam@gmail.com">3dsvietnam@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                            <div>
-                                <strong>Giờ làm việc:</strong>
-                                <p>Thứ 2 - Thứ 7: 8:00 - 18:00<br>Chủ nhật: 8:00 - 12:00</p>
-                            </div>
-                        </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-award"></i>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-btn fb"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-btn yt"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-btn zalo"><span>Z</span></a>
+                    <div class="highlight-content">
+                        <h3>Sản Phẩm Chất Lượng</h3>
+                        <p>Sản phẩm đảm bảo chính hãng</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Lắp Đặt Chuyên Nghiệp</h3>
+                        <p>Nhanh chóng và chất lượng</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MAP -->
-    <div class="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6!2d105.7!3d21.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAwJzAwLjAiTiAxMDXCsDQyJzAwLjAiRQ!5e0!3m2!1svi!2svn!4v1000000000000!5m2!1svi!2svn" 
-                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ 3DS Việt Nam"></iframe>
-    </div>
+    <!-- ========== FEATURED PRODUCTS SECTION ========== -->
+    <section class="products-section" id="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <span class="section-dot"></span>
+                    <h2>SẢN PHẨM NỔI BẬT</h2>
+                </div>
+                <a href="#" class="see-more">Xem thêm <i class="fas fa-chevron-right"></i></a>
+            </div>
 
-    <!-- FOOTER -->
-    <footer class="main-footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-grid">
-                    <div class="footer-col footer-about">
-                        <div class="footer-logo">
-                            <span class="logo-3ds-footer">3DS</span>
-                            <div>
-                                <span class="logo-mech-footer">MECHANICAL</span>
-                                <span class="logo-tag-footer">FOR YOUR SATISFACTION</span>
-                            </div>
+            <div class="products-slider-wrapper">
+                <div class="products-grid featured-grid" id="featured-grid">
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/water-cooled-package_1687764012.webp" 
+                                 alt="Water-cooled Package"
+                                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
                         </div>
-                        <p>Chuyên cung cấp vật tư phụ cơ khí, phụ kiện xây dựng chất lượng cao cho các công trình dân dụng và công nghiệp trên toàn quốc.</p>
-                        <div class="footer-badges">
-                            <div class="badge-item">
-                                <i class="fas fa-certificate"></i>
-                                <span>Đã thông báo<br>Bộ Công Thương</span>
-                            </div>
-                            <div class="badge-item">
-                                <i class="fas fa-award"></i>
-                                <span>ISO 9001<br>Certified</span>
-                            </div>
+                        <div class="product-card-body">
+                            <h3 class="product-name">Water-cooled Package</h3>
+                            <a href="#" class="btn-contact">Liên hệ</a>
                         </div>
                     </div>
-                    <div class="footer-col">
-                        <h4 class="footer-title">Sản Phẩm Chính</h4>
-                        <ul class="footer-links">
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Thanh Ren Mạ Kẽm</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Đai Treo Ống</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Nở Đạn Các Loại</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> UBolt Kẹp Ống</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Bulong - Ốc Vít</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Kẹp Xà Gồ</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Thanh Unistrut</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Thép Hình U-V-I</a></li>
-                        </ul>
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/water-cooled-screw-chiller_1687764012.webp" 
+                                 alt="Water Cooled Screw Chiller"
+                                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                        </div>
+                        <div class="product-card-body">
+                            <h3 class="product-name">Water Cooled Screw Chiller</h3>
+                            <a href="#" class="btn-contact">Liên hệ</a>
+                        </div>
                     </div>
-                    <div class="footer-col">
-                        <h4 class="footer-title">Chính Sách</h4>
-                        <ul class="footer-links">
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách thanh toán</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách vận chuyển</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách đổi trả</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Chính sách bảo mật</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Điều khoản sử dụng</a></li>
-                        </ul>
-                        <h4 class="footer-title" style="margin-top:24px">Hỗ Trợ</h4>
-                        <ul class="footer-links">
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Câu hỏi thường gặp</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Hướng dẫn đặt hàng</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right"></i> Liên hệ hỗ trợ</a></li>
-                        </ul>
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-tims-vrf-2024v1-reduce-size_1687764012.webp" 
+                                 alt="TICA TIMS VRF"
+                                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                        </div>
+                        <div class="product-card-body">
+                            <h3 class="product-name">TICA TIMS VRF-2024V1 Reduce Size</h3>
+                            <a href="#" class="btn-contact">Liên hệ</a>
+                        </div>
                     </div>
-                    <div class="footer-col footer-contact-col">
-                        <h4 class="footer-title">Liên Hệ</h4>
-                        <ul class="footer-contact-list">
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Số 10, LK34 Khu ĐT mới Vân Canh, Hoài Đức, Hà Nội</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span><a href="tel:0912345678">0912.345.678</a> (Kinh doanh 1)</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-phone"></i>
-                                <span><a href="tel:0987654321">0987.654.321</a> (Kinh doanh 2)</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope"></i>
-                                <span><a href="mailto:3dsvietnam@gmail.com">3dsvietnam@gmail.com</a></span>
-                            </li>
-                        </ul>
-                        <div class="footer-social">
-                            <a href="#" class="fsocial-btn"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="fsocial-btn"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="fsocial-btn"><i class="fab fa-tiktok"></i></a>
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-ofc-centrifugal_1687764012.webp" 
+                                 alt="TICA OFC Centrifugal"
+                                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                        </div>
+                        <div class="product-card-body">
+                            <h3 class="product-name">TICA OFC&Centrifugal...</h3>
+                            <a href="#" class="btn-contact">Liên hệ</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-air-cooled-flooded-screw_1687764139.webp" 
+                                 alt="TICA air-cooled flooded screw"
+                                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                        </div>
+                        <div class="product-card-body">
+                            <h3 class="product-name">TICA air-cooled flooded screw...</h3>
+                            <a href="#" class="btn-contact">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="prod-slider-btn prod-prev" id="feat-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="prod-slider-btn prod-next" id="feat-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIDEO / PROFILE SECTION ========== -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-layout">
+                <div class="video-area">
+                    <div class="video-placeholder">
+                        <div class="video-thumb">
+                            <i class="fab fa-youtube"></i>
+                            <span>TICA Air Conditioning Profile</span>
+                        </div>
+                    </div>
+                    <div class="video-placeholder">
+                        <div class="video-thumb">
+                            <i class="fab fa-youtube"></i>
+                            <span>TICA Product Showcase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <a href="#" class="btn-profile">XEM PROFILE 1</a>
+                    <a href="#" class="btn-profile">XEM PROFILE 2</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ALL PRODUCTS SECTION ========== -->
+    <section class="products-section all-products" id="all-products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <span class="section-dot"></span>
+                    <h2>TẤT CẢ SẢN PHẨM</h2>
+                </div>
+                <a href="#" class="see-more">Xem thêm <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="products-grid all-grid">
+                <!-- Row 1 -->
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/water-cooled-package_1687764012.webp" 
+                             alt="Water-cooled Package"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">Water-cooled Package</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/water-cooled-screw-chiller_1687764012.webp" 
+                             alt="Water Cooled Screw Chiller"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">Water Cooled Screw Chiller</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-tims-vrf-2024v1-reduce-size_1687764012.webp" 
+                             alt="TICA TIMS VRF"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">TICA TIMS VRF-2024V1 Reduce Size</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-ofc-centrifugal_1687764012.webp" 
+                             alt="TICA OFC Centrifugal"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">TICA OFC&Centrifugal...</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tica-air-cooled-flooded-screw_1687764139.webp"
+                             alt="TICA air-cooled flooded screw"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">TICA air-cooled flooded screw...</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/inverter-direct-expansion-air_1687765275.webp" 
+                             alt="Inverter Direct Expansion Air"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">Inverter Direct Expansion Air...</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/modular-air-handling-unit_1687765174.webp" 
+                             alt="Modular Air Handling Unit"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">Modular Air Handling Unit...</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/natural-refrigerant-co2-heat-pump_1687765350.webp" 
+                             alt="Natural Refrigerant CO2 Heat Pump"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">Natural Refrigerant CO₂ Heat Pump</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/tfd-h-ceiling-type-ahu-a3422g02_1687765072.webp" 
+                             alt="TFD-H Ceiling Type AHU"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">TFD-H Ceiling Type AHU A3422G02</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/product/thumbs/air-source-chiller-heat-pump_1687765450.webp" 
+                             alt="Air Source Chiller Heat Pump"
+                             onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'fas fa-snowflake\'></i></div>'">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 class="product-name">Air Source Chiller (Heat Pump)</h3>
+                        <a href="#" class="btn-contact">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED PROJECTS SECTION ========== -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <span class="section-dot"></span>
+                    <h2>DỰ ÁN TIÊU BIỂU</h2>
+                </div>
+                <a href="#" class="see-more">Xem thêm <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+            <div class="projects-layout">
+                <!-- Main Featured Project -->
+                <div class="project-main">
+                    <div class="project-main-img">
+                        <img src="https://ticaairconditioning-ducphat.com.vn/upload/project/thumbs/du-an-nha-may-cong-ty-tnhh-qisda-viet-nam_1687766012.webp" 
+                             alt="Nhà máy QISDA Việt Nam"
+                             onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-building\'></i></div>'">
+                    </div>
+                    <div class="project-main-info">
+                        <h3>DỰ ÁN NHÀ MÁY CÔNG TY TNHH QISDA VIỆT NAM</h3>
+                        <div class="project-divider"></div>
+                        <p>Địa chỉ: KCN Đồng Văn IV, tỉnh Hà Nam Chủ đầu tư: Công ty TNHH Qisda Việt Nam Thi công/ khách hàng: công ty TNHH thương mại-dịch vụ và xây</p>
+                    </div>
+                </div>
+
+                <!-- Side Projects -->
+                <div class="projects-side">
+                    <div class="project-side-item">
+                        <div class="project-side-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/project/thumbs/nha-may-nishoku_1687766200.webp" 
+                                 alt="Nhà máy Nishoku"
+                                 onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder-sm\'><i class=\'fas fa-industry\'></i></div>'">
+                        </div>
+                        <div class="project-side-info">
+                            <h4>Nhà máy Nishoku</h4>
+                            <div class="project-divider-sm"></div>
+                        </div>
+                    </div>
+                    <div class="project-side-item">
+                        <div class="project-side-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/project/thumbs/nha-may-gemtek_1687766300.webp" 
+                                 alt="Nhà máy Gemtek"
+                                 onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder-sm\'><i class=\'fas fa-industry\'></i></div>'">
+                        </div>
+                        <div class="project-side-info">
+                            <h4>Nhà máy Gemtek</h4>
+                            <div class="project-divider-sm"></div>
+                        </div>
+                    </div>
+                    <div class="project-side-item">
+                        <div class="project-side-img">
+                            <img src="https://ticaairconditioning-ducphat.com.vn/upload/project/thumbs/nha-may-micoem_1687766400.webp" 
+                                 alt="Nhà máy micoem"
+                                 onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder-sm\'><i class=\'fas fa-industry\'></i></div>'">
+                        </div>
+                        <div class="project-side-info">
+                            <h4>Nhà máy micoem-kcn tiên sơn-từ sơn- bắc ninh-hệ thống điều hòa...</h4>
+                            <div class="project-divider-sm"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Company Info -->
+                <div class="footer-col footer-about">
+                    <h3 class="footer-title">CÔNG TY TNHH THƯƠNG MẠI-DỊCH VỤ VÀ XÂY LẮP ĐỨC PHÁT</h3>
+                    <p class="footer-desc">Chuyên: cung cấp các loại linh kiện máy in gạch, động cơ, hộp giảm tốc, cáp điện công nghiệp, van, xilanh, hệ thống thuỷ lực, băng tải công nghiệp, máy khuấy, hệ thống lọc bụi công nghiệp...</p>
+                    <div class="footer-contacts-list">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Địa chỉ: Số 2 Ngách 8 Ngõ 56 Phố Thạch Cầu, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>Hotline: 0904.845.152</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: ducphat-info@dpmep.com.vn</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Website: tica-ducphat.com.vn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Policies -->
+                <div class="footer-col footer-policies">
+                    <h3 class="footer-title">CÁC CHÍNH SÁCH</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Bảo hành &amp; đổi trả</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Facebook Fanpage -->
+                <div class="footer-col footer-social">
+                    <h3 class="footer-title">FANPAGE FACEBOOK</h3>
+                    <div class="fb-fanpage">
+                        <div class="fb-page-box">
+                            <div class="fb-icon-area">
+                                <div class="fb-circle">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="fb-info">
+                                    <strong>Facebook</strong>
+                                    <span class="verified"><i class="fas fa-check-circle"></i></span>
+                                    <br>
+                                    <small>155M followers</small>
+                                </div>
+                            </div>
+                            <button class="fb-follow-btn"><i class="fab fa-facebook-f"></i> Follow Page</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
-                <p>© 2025 Công Ty TNHH 3DS Việt Nam. Tất cả quyền được bảo lưu.</p>
-                <p>Thiết kế bởi <strong>3DS Web Team</strong> | GPKD: 0109XXXXXXX</p>
+                <p>Thiết kế bởi Duy Anh Web</p>
             </div>
         </div>
     </footer>
+
+    <!-- ========== FLOATING BUTTONS ========== -->
+    <div class="floating-buttons">
+        <a href="https://zalo.me/0904845152" class="float-btn zalo-btn" target="_blank" title="Chat Zalo">
+            <img src="https://page.widget.zalo.me/static/images/2.0/Logo.svg" alt="Zalo" width="30" height="30"
+                 onerror="this.innerHTML='Z'">
+        </a>
+        <a href="tel:0904845152" class="float-btn phone-btn" title="Gọi ngay">
+            <i class="fas fa-phone-alt"></i>
+            <span class="float-phone-num">0904845152</span>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" title="Về đầu trang">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
