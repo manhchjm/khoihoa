@@ -1,175 +1,204 @@
-/* =============================================
-   3DS MECHANICAL - script.js
-   ============================================= */
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    /* ===== HERO SLIDER ===== */
-    const wrapper = document.getElementById('slidesWrapper');
+// ========== HERO SLIDER ==========
+(function () {
+    const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('slider-prev');
+    const nextBtn = document.getElementById('slider-next');
     let current = 0;
-    let autoSlideTimer;
-    const totalSlides = 3;
+    let autoTimer;
 
-    function goToSlide(index) {
-        current = (index + totalSlides) % totalSlides;
-        wrapper.style.transform = `translateX(-${current * 100}%)`;
-        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    function showSlide(index) {
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        current = index;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
     }
 
-    function startAutoSlide() {
-        autoSlideTimer = setInterval(() => goToSlide(current + 1), 5000);
+    function startAuto() {
+        autoTimer = setInterval(() => {
+            showSlide(current + 1);
+        }, 4500);
     }
 
-    function resetTimer() {
-        clearInterval(autoSlideTimer);
-        startAutoSlide();
+    function resetAuto() {
+        clearInterval(autoTimer);
+        startAuto();
     }
 
-    document.getElementById('nextBtn')?.addEventListener('click', () => { goToSlide(current + 1); resetTimer(); });
-    document.getElementById('prevBtn')?.addEventListener('click', () => { goToSlide(current - 1); resetTimer(); });
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            showSlide(current - 1);
+            resetAuto();
+        });
+    }
 
-    dots.forEach(dot => {
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            showSlide(current + 1);
+            resetAuto();
+        });
+    }
+
+    dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
-            goToSlide(parseInt(dot.dataset.index));
-            resetTimer();
+            showSlide(i);
+            resetAuto();
         });
     });
+
+    startAuto();
 
     // Touch/swipe support
-    let touchStartX = 0;
     const sliderEl = document.querySelector('.hero-slider');
     if (sliderEl) {
-        sliderEl.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-        sliderEl.addEventListener('touchend', e => {
-            const diff = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 50) { goToSlide(diff > 0 ? current + 1 : current - 1); resetTimer(); }
+        let startX = 0;
+        sliderEl.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        }, { passive: true });
+        sliderEl.addEventListener('touchend', (e) => {
+            const diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40) {
+                showSlide(diff > 0 ? current + 1 : current - 1);
+                resetAuto();
+            }
+        }, { passive: true });
+    }
+})();
+
+// ========== MOBILE NAV TOGGLE ==========
+(function () {
+    const toggle = document.getElementById('mobile-toggle');
+    const menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            const icon = toggle.querySelector('i');
+            if (menu.classList.contains('open')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
         });
     }
 
-    startAutoSlide();
-
-    /* ===== STICKY HEADER ===== */
-    const header = document.getElementById('mainHeader');
-    window.addEventListener('scroll', () => {
-        if (header) header.classList.toggle('scrolled', window.scrollY > 80);
-    }, { passive: true });
-
-    /* ===== BACK TO TOP ===== */
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-        if (backToTop) backToTop.classList.toggle('visible', window.scrollY > 400);
-    }, { passive: true });
-
-    backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-    /* ===== MOBILE MENU ===== */
-    const menuBtn = document.getElementById('mobileMenuBtn');
-    const nav = document.getElementById('mainNav');
-    menuBtn?.addEventListener('click', () => {
-        nav?.classList.toggle('open');
-        const icon = menuBtn.querySelector('i');
-        if (icon) icon.classList.toggle('fa-bars');
-        if (icon) icon.classList.toggle('fa-times');
-    });
-
-    /* ===== SMOOTH SCROLL for anchor links ===== */
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', e => {
-            const target = document.querySelector(link.getAttribute('href'));
-            if (target) {
+    // Dropdown on mobile
+    document.querySelectorAll('.nav-item.has-dropdown .nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
                 e.preventDefault();
-                const offset = 80;
-                const top = target.getBoundingClientRect().top + window.scrollY - offset;
-                window.scrollTo({ top, behavior: 'smooth' });
-                nav?.classList.remove('open');
+                link.closest('.nav-item').classList.toggle('open-sub');
             }
         });
     });
+})();
 
-    /* ===== SEARCH INPUT ===== */
-    const searchInput = document.getElementById('searchInput');
-    searchInput?.addEventListener('keypress', e => {
-        if (e.key === 'Enter') {
-            const query = searchInput.value.trim();
-            if (query) alert(`Đang tìm kiếm: "${query}"`);
+// ========== BACK TO TOP ==========
+(function () {
+    const btn = document.getElementById('back-to-top');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
         }
+    }, { passive: true });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+})();
+
+// ========== STICKY HEADER SHADOW ==========
+(function () {
+    const header = document.querySelector('.header');
+    if (!header) return;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header.style.boxShadow = '0 4px 16px rgba(0,0,0,0.18)';
+        } else {
+            header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.12)';
+        }
+    }, { passive: true });
+})();
+
+// ========== FEATURED PRODUCTS SLIDER (left/right) ==========
+(function () {
+    const grid = document.getElementById('featured-grid');
+    const prevBtn = document.getElementById('feat-prev');
+    const nextBtn = document.getElementById('feat-next');
+    if (!grid || !prevBtn || !nextBtn) return;
+
+    let scrollAmount = 0;
+    const cardWidth = 220;
+
+    nextBtn.addEventListener('click', () => {
+        scrollAmount += cardWidth;
+        grid.scrollTo({ left: scrollAmount, behavior: 'smooth' });
     });
 
-    /* ===== CONTACT FORM ===== */
-    const form = document.getElementById('contactForm');
-    form?.addEventListener('submit', e => {
-        e.preventDefault();
-        const btn = form.querySelector('.btn-submit');
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check-circle"></i> Đã gửi thành công!';
-        btn.style.background = '#28a745';
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.style.background = '';
-            form.reset();
-        }, 3000);
+    prevBtn.addEventListener('click', () => {
+        scrollAmount = Math.max(0, scrollAmount - cardWidth);
+        grid.scrollTo({ left: scrollAmount, behavior: 'smooth' });
     });
+})();
 
-    /* ===== SCROLL REVEAL ANIMATION ===== */
+// ========== SEARCH ON ENTER ==========
+(function () {
+    const input = document.getElementById('search-input');
+    const btn = document.getElementById('search-btn');
+    if (!input || !btn) return;
+
+    function doSearch() {
+        const q = input.value.trim();
+        if (q) {
+            // In production, navigate to search results
+            // window.location.href = `/search?q=${encodeURIComponent(q)}`;
+            alert('Tìm kiếm: ' + q);
+        }
+    }
+
+    btn.addEventListener('click', doSearch);
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') doSearch();
+    });
+})();
+
+// ========== PRODUCT CARD HOVER ANIMATION (scroll-triggered) ==========
+(function () {
+    const cards = document.querySelectorAll('.product-card');
+    if (!('IntersectionObserver' in window)) return;
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1 });
 
-    const revealEls = document.querySelectorAll(
-        '.product-card, .commitment-item, .project-card, .news-card, .stat-item, .about-grid, .contact-grid'
-    );
-    revealEls.forEach((el, i) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.6s ease ${i * 0.08}s, transform 0.6s ease ${i * 0.08}s`;
-        observer.observe(el);
+    cards.forEach((card, i) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = `opacity 0.4s ease ${i * 0.05}s, transform 0.4s ease ${i * 0.05}s`;
+        observer.observe(card);
     });
+})();
 
-    // Add revealed styles dynamically
-    const style = document.createElement('style');
-    style.textContent = `.revealed { opacity: 1 !important; transform: translateY(0) !important; }`;
-    document.head.appendChild(style);
-
-    /* ===== COUNTER ANIMATION for stats ===== */
-    const statNumbers = document.querySelectorAll('.stat-item strong');
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            const el = entry.target;
-            const text = el.textContent.trim();
-            const num = parseInt(text);
-            const suffix = text.replace(/[0-9]/g, '');
-            if (isNaN(num)) return;
-            let start = 0;
-            const duration = 1500;
-            const step = duration / 60;
-            const increment = num / (duration / step);
-            const timer = setInterval(() => {
-                start = Math.min(start + increment, num);
-                el.textContent = Math.floor(start) + suffix;
-                if (start >= num) { el.textContent = num + suffix; clearInterval(timer); }
-            }, step);
-            statsObserver.unobserve(el);
-        });
-    }, { threshold: 0.5 });
-
-    statNumbers.forEach(el => statsObserver.observe(el));
-
-    /* ===== DROPDOWN KEYBOARD SUPPORT ===== */
-    document.querySelectorAll('.has-dropdown').forEach(item => {
-        const link = item.querySelector('.nav-link');
-        link?.addEventListener('keydown', e => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                item.querySelector('.dropdown')?.classList.toggle('open');
-            }
+// ========== LANGUAGE FLAG TOGGLE ==========
+(function () {
+    const flags = document.querySelectorAll('.flag-btn');
+    flags.forEach(flag => {
+        flag.addEventListener('click', (e) => {
+            e.preventDefault();
+            flags.forEach(f => f.classList.remove('active'));
+            flag.classList.add('active');
         });
     });
-
-});
+})();
